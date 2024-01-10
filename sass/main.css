@@ -1,1 +1,18 @@
-/*# sourceMappingURL=main.css.map */
+.simulateur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form label {
+  padding: 10px;
+}
+
+#imageDes {
+  width: 200px;
+}
+
+#lancerDe {
+  width: 200px;
+}/*# sourceMappingURL=main.css.map */
