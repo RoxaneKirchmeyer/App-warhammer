@@ -1,3 +1,167 @@
+h2,
+p,
+li {
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  background-color: gainsboro;
+}
+
+.test {
+  height: 30vh;
+}
+
+.datasheet-profile {
+  flex: 1;
+  background-color: #1d1a1b;
+}
+.datasheet-profile h2 {
+  color: #ffffff;
+  background-color: #186071;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0 10px 10px 20px;
+  margin-top: 20px;
+}
+.datasheet-profile ul {
+  margin: 0;
+  padding: 0 15px;
+  justify-content: center;
+  background-color: #186071;
+  gap: 10px;
+}
+.datasheet-profile ul li {
+  font-family: "Heebo", sans-serif;
+  text-align: center;
+}
+.datasheet-profile .profile-header li {
+  color: #ffffff;
+  font-size: 10px;
+  padding: 0 10px;
+  border: 5px solid #186071;
+  border-bottom: 0px;
+  border-top: 0px;
+  text-align: center;
+  width: 20px;
+}
+.datasheet-profile .profile-values {
+  padding-bottom: 10px;
+  border-bottom-right-radius: 100px;
+}
+.datasheet-profile .profile-values li {
+  color: #186071;
+  background-color: #e6e9e2;
+  border: 5px solid #186071;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 20px;
+  line-height: 20px;
+  width: 20px;
+}
+
+.datasheet-description {
+  margin-left: 225px;
+  flex: 1;
+}
+.datasheet-description h2 {
+  background-color: rgba(125, 17, 17, 0.9);
+  border-bottom-left-radius: 100px;
+  color: #ffffff;
+  margin: 0;
+  font-size: 20px;
+  padding: 10px;
+  padding-left: 30px;
+  text-align: right;
+  font-family: "Barlow", sans-serif;
+}
+.datasheet-description p {
+  font-family: "Heebo", sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.datasheet-header {
+  display: flex;
+  justify-content: center;
+  background-color: #1d1a1b;
+  position: relative;
+  height: 200px;
+}
+.datasheet-header .overlay {
+  position: absolute;
+  width: 200px;
+  display: block;
+  top: 0;
+  left: 42%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.datasheet {
+  margin: auto;
+  width: 90%;
+}
+
+.weapon {
+  background-color: #e6e9e2;
+}
+.weapon th, .weapon td {
+  width: 20px;
+}
+.weapon .characteristic-title {
+  width: 150px;
+  text-align: left;
+}
+.weapon table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 60%;
+  border-top: 2px solid #186071;
+  border-right: 2px solid #186071;
+  border-left: 2px solid #186071;
+}
+.weapon thead {
+  background-color: #186071;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+.weapon thead th {
+  padding: 5px;
+}
+.weapon tbody {
+  font-family: "Barlow", sans-serif;
+  background-color: #e6e9e2;
+  font-size: 15px;
+  font-weight: 500;
+}
+.weapon tbody .characteristic-title {
+  padding-left: 5px;
+}
+.weapon tbody td {
+  padding: 5px 0;
+  border-bottom: 2px dotted black;
+}
+.weapon tbody .logoThead {
+  border-bottom: none;
+}
+
 .simulateur {
   display: flex;
   justify-content: center;
