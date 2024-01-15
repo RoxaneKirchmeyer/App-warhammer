@@ -34,18 +34,18 @@ body {
   padding: 0 10px 10px 20px;
   margin-top: 20px;
 }
-.datasheet-profile ul {
+.datasheet-profile table {
+  border-collapse: collapse;
+}
+.datasheet-profile .profile-header {
   margin: 0;
   padding: 0 15px;
   justify-content: center;
   background-color: #186071;
   gap: 10px;
 }
-.datasheet-profile ul li {
+.datasheet-profile .profile-header th {
   font-family: "Heebo", sans-serif;
-  text-align: center;
-}
-.datasheet-profile .profile-header li {
   color: #ffffff;
   font-size: 10px;
   padding: 0 10px;
@@ -59,7 +59,10 @@ body {
   padding-bottom: 10px;
   border-bottom-right-radius: 100px;
 }
-.datasheet-profile .profile-values li {
+.datasheet-profile .profile-values td {
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  text-align: center;
   color: #186071;
   background-color: #e6e9e2;
   border: 5px solid #186071;
@@ -107,8 +110,8 @@ body {
   width: 200px;
   display: block;
   top: 0;
-  left: 42%;
-  transform: translateY(-50%);
+  left: 35%;
+  transform: translateY(-45%);
   z-index: 1;
 }
 
