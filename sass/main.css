@@ -7,7 +7,8 @@
   font-family: "Oswald", sans-serif;
   color: #ffffff;
   background: rgb(24, 96, 113);
-  background: linear-gradient(90deg, rgb(24, 96, 113) 0%, rgb(29, 26, 27) 100%);
+  background: linear-gradient(90deg, rgb(24, 96, 113) 0%, rgb(29, 26, 27) 40%);
+  width: 100%;
 }
 
 body {
@@ -80,6 +81,18 @@ span {
   border-bottom: 2px dotted black;
 }
 
+header {
+  height: 150px;
+  background-color: black;
+  margin-bottom: 200px;
+}
+
+footer {
+  height: 150px;
+  background-color: gray;
+  margin-top: 200px;
+}
+
 .overlay {
   position: absolute;
   width: 200px;
@@ -123,14 +136,11 @@ footer img {
 .datasheet-profiles {
   margin: 15px 0;
   padding: 15px;
-  border-spacing: 15px;
-  border-collapse: separate;
 }
 .datasheet-profiles thead th {
   font-family: "Heebo", sans-serif;
   color: #ffffff;
   font-size: 0.75rem;
-  padding: 0 10px;
   border-bottom: 0px;
   border-top: 0px;
   text-align: center;
@@ -186,7 +196,7 @@ footer img {
   text-align: center;
 }
 
-.empire-tau {
+.Empire-Tau {
   background-color: #186071;
 }
 
@@ -221,10 +231,10 @@ footer img {
   position: relative;
   height: 200px;
   display: flex;
+  flex-wrap: wrap;
+  margin: 0;
 }
 .datasheet header .datasheet-profiles {
-  background-color: #1d1a1b;
-  width: 50%;
   display: block;
 }
 .datasheet header .datasheet-profiles thead {
@@ -242,7 +252,10 @@ footer img {
   background-color: #186071;
 }
 .datasheet header .datasheet-description {
-  width: 50%;
+  width: 40%;
+  position: relative;
+  top: -65px;
+  left: 450px;
 }
 .datasheet .datasheet-other-rules {
   background-color: #e6e9e2;
@@ -281,6 +294,8 @@ footer img {
   display: flex;
   width: 100%;
   position: relative;
+  margin: 0;
+  margin-bottom: 100px;
 }
 .datasheet footer .datasheet-keywords {
   width: 71%;

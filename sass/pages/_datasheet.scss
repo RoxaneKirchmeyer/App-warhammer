@@ -9,10 +9,10 @@
         position: relative;
         height: 200px;
         display: flex;
+        flex-wrap: wrap;
+        margin: 0;
 
         .datasheet-profiles {
-            background-color: $blackBgr;
-            width: 50%;
             display: block;
 
             thead {
@@ -37,7 +37,10 @@
         }
 
         .datasheet-description {
-            width: 50%;
+            width: 40%;
+            position: relative;
+            top:-65px;
+            left: 450px;
         }
     }
 
@@ -86,6 +89,8 @@
         display: flex;
         width: 100%;
         position: relative;
+        margin: 0;
+        margin-bottom: 100px;
 
         .datasheet-keywords {
             width: 71%;

@@ -1,5 +1,17 @@
+let jsonData;
+let armySelector = document.querySelector("#armySelector");
+
+// Charger le fichier JSON et appeler la fonction avec les données
+fetch('/json/rules.json')
+    .then(response => response.json())
+    .then(data => {
+        jsonData = data;
+        createArmySelector(data);
+    })
+    .catch(error => console.error('Erreur lors de la récupération du fichier JSON :', error));
+
 // Fonction générique pour créer des éléments HTML dynamiquement
-function createHtmlElement(type, parent, className, id, contenu, event) {
+function createHtmlElement(type, parent, className, id, contenu, attribute, event) {
     // Permet de créer un élément HTML en fonction du paramètre type
     let htmlElement = document.createElement(type);
     parent.appendChild(htmlElement);
@@ -11,21 +23,27 @@ function createHtmlElement(type, parent, className, id, contenu, event) {
         htmlElement.id = id;
     }
 
+    if (type === 'option') {
+        htmlElement.value = attribute
+    }
     // Permet d'ajouter du contenu à cet élément HTML en fonction du paramètre contenu
     // Si on a créé un élément HTML de type p ou h2 : on change le contenu de la balise en fonction du paramètre contenu
 
     // Si on a créé un élément HTML de type img : on ajoute une source d'image en fonction du paramètre contenu
     if (type === 'img') {
         htmlElement.src = contenu;
-        htmlElement.alt = event
+        htmlElement.alt = attribute
     }
 
     // Si le paramètre event correspond bien à une fonction :
     if (type === 'button') {
         // Ajouter un écouteur d'évènement
         htmlElement.textContent = contenu;
+        htmlElement.type = attribute
         htmlElement.addEventListener('click', event);
-    } else {
+    } 
+    
+    else {
         htmlElement.textContent = contenu;
     }
 
@@ -34,11 +52,9 @@ function createHtmlElement(type, parent, className, id, contenu, event) {
 }
 
 function createDatasheet(factionName) {
-    fetch('/json/rules.json')
-        .then(response => response.json())
-        .then(data => {
 
-            let factionData = data.factions[factionName];
+
+            let factionData = jsonData.factions[factionName];
 
             if (!factionData) {
                 console.error(`Faction '${factionName}' not found in the JSON data.`);
@@ -48,20 +64,21 @@ function createDatasheet(factionName) {
             let factionCombatPatrolUnits = factionData.factions_rules.combat_patrol.patrol_units;
 
 
+            
 
             Object.keys(factionCombatPatrolUnits).forEach(units => {
                 // Article
-                const datasheetArticle = createHtmlElement('article', document.body, "datasheet");
+                const datasheetArticle = createHtmlElement('article', armySelector, "datasheet");
                 // Header
                 const header = createHtmlElement('header', datasheetArticle);
                 createHtmlElement('h2', header, "datasheet-name", undefined, units.toUpperCase());
                 // Table
                 const datasheetProfilesTable = createHtmlElement('table', header, 'datasheet-profiles');
                 // Thead
-                const datasheetProfilesTableThead = createHtmlElement('thead', datasheetProfilesTable);
+                const datasheetProfilesTableThead = createHtmlElement('thead', datasheetProfilesTable, factionName.replace(/\s+/g, '-').replace(/'/g, ''));
 
                 const datasheetProfilesTableTheadTr = createHtmlElement('tr', datasheetProfilesTableThead);
-                let datasheetProfilesCharacteristics = data.core_rules['profiles-characteristics'];
+                let datasheetProfilesCharacteristics = jsonData.core_rules['profiles-characteristics'];
                 Object.values(datasheetProfilesCharacteristics).forEach(characteristic => {
                     createHtmlElement('th', datasheetProfilesTableTheadTr, undefined, undefined, characteristic);
                 });
@@ -98,7 +115,7 @@ function createDatasheet(factionName) {
 
                 if (factionCombatPatrolUnits[units].weapons && factionCombatPatrolUnits[units].weapons.ranged) {
                     const datasheetRangedWeaponsTable = createHtmlElement('table', datasheetOtherRules, "datasheet-weapons");
-                    const datasheetRangedWeaponsThead = createHtmlElement('thead', datasheetRangedWeaponsTable);
+                    const datasheetRangedWeaponsThead = createHtmlElement('thead', datasheetRangedWeaponsTable, factionName.replace(/\s+/g, '-').replace(/'/g, ''));
                     const datasheetRangedWeaponsTheadTr = createHtmlElement('tr', datasheetRangedWeaponsThead);
 
                     const rangedWeaponData = factionCombatPatrolUnits[units].weapons.ranged;
@@ -127,7 +144,7 @@ function createDatasheet(factionName) {
 
                 if (factionCombatPatrolUnits[units].weapons && factionCombatPatrolUnits[units].weapons.melee) {
                     const datasheetMeleeWeaponsTable = createHtmlElement('table', datasheetOtherRules, "datasheet-weapons");
-                    const datasheetMeleeWeaponsThead = createHtmlElement('thead', datasheetMeleeWeaponsTable);
+                    const datasheetMeleeWeaponsThead = createHtmlElement('thead', datasheetMeleeWeaponsTable, factionName.replace(/\s+/g, '-').replace(/'/g, ''));
                     const datasheetMeleeWeaponsTheadTr = createHtmlElement('tr', datasheetMeleeWeaponsThead);
 
                     const meleeWeaponData = factionCombatPatrolUnits[units].weapons.melee;
@@ -155,7 +172,7 @@ function createDatasheet(factionName) {
                 // Wargear abilities
                 if (factionCombatPatrolUnits[units].wargear_abilities) {
                     let datasheetWargearAbilities = createHtmlElement('section', datasheetOtherRules, "datasheet-wargear-abilities");
-                    createHtmlElement('h3', datasheetWargearAbilities, undefined, undefined, "APTITUDES D'ÉQUIPEMENT");
+                    createHtmlElement('h3', datasheetWargearAbilities, factionName.replace(/\s+/g, '-').replace(/'/g, ''), undefined, "APTITUDES D'ÉQUIPEMENT");
 
                     // Loop through each key in wargear_abilities
                     Object.entries(factionCombatPatrolUnits[units].wargear_abilities).forEach(([key, value]) => {
@@ -173,7 +190,7 @@ function createDatasheet(factionName) {
                 // LEADER
                 if (factionCombatPatrolUnits[units].leader) {
                     let datasheetLeader = createHtmlElement('section', datasheetOtherRules, "datasheet-leader");
-                    createHtmlElement('h3', datasheetLeader, undefined, undefined, "MENEUR");
+                    createHtmlElement('h3', datasheetLeader, factionName.replace(/\s+/g, '-').replace(/'/g, ''), undefined, "MENEUR");
 
                     // Loop through each key in wargear_abilities
                     Object.entries(factionCombatPatrolUnits[units].leader).forEach(([key, value]) => {
@@ -191,7 +208,7 @@ function createDatasheet(factionName) {
                 // TRANSPORT
                 if (factionCombatPatrolUnits[units].transport) {
                     let datasheetTransport = createHtmlElement('section', datasheetOtherRules, "datasheet-leader");
-                    createHtmlElement('h3', datasheetTransport, undefined, undefined, "TRANSPORT");
+                    createHtmlElement('h3', datasheetTransport, factionName.replace(/\s+/g, '-').replace(/'/g, ''), undefined, "TRANSPORT");
 
                     // Loop through each key in wargear_abilities
                     Object.entries(factionCombatPatrolUnits[units].transport).forEach(([key, value]) => {
@@ -209,7 +226,7 @@ function createDatasheet(factionName) {
                 // PATROL SQUAD
                 if (factionCombatPatrolUnits[units].patrolSquad) {
                     let datasheetPatrolSquad = createHtmlElement('section', datasheetOtherRules, "datasheet-patrol-squad");
-                    createHtmlElement('h3', datasheetPatrolSquad, undefined, undefined, "ESCOUADES DE PATROUILLE");
+                    createHtmlElement('h3', datasheetPatrolSquad, factionName.replace(/\s+/g, '-').replace(/'/g, ''), undefined, "ESCOUADES DE PATROUILLE");
 
                     // Loop through each key in wargear_abilities
                     Object.entries(factionCombatPatrolUnits[units].patrolSquad).forEach(([key, value]) => {
@@ -228,12 +245,12 @@ function createDatasheet(factionName) {
                 // DAMAGED
                 if (factionCombatPatrolUnits[units].damaged) {
                     let datasheetDamaged = createHtmlElement('section', datasheetOtherRules, "datasheet-damaged");
-                    createHtmlElement('h3', datasheetDamaged, undefined, undefined, "ENDOMMAGÉ : 1-4 PV RESTANTS");
+                    createHtmlElement('h3', datasheetDamaged, factionName.replace(/\s+/g, '-').replace(/'/g, ''), undefined, "ENDOMMAGÉ : 1-4 PV RESTANTS");
 
                     // Loop through each key in wargear_abilities
                     Object.entries(factionCombatPatrolUnits[units].damaged).forEach(([key, value]) => {
                         // Create a new paragraph for each key
-                        let datasheetDamagedParagraph = createHtmlElement('p', datasheetDamaged, undefined, undefined, value);
+                        createHtmlElement('p', datasheetDamaged, undefined, undefined, value);
                     });
                 }
 
@@ -242,7 +259,7 @@ function createDatasheet(factionName) {
 
                 if (factionCombatPatrolUnits[units].abilities) {
                     let datasheetAbilities = createHtmlElement('section', datasheetArticle, "datasheet-abilities");
-                    createHtmlElement('h3', datasheetAbilities, undefined, undefined, "APTITUDES");
+                    createHtmlElement('h3', datasheetAbilities, factionName.replace(/\s+/g, '-').replace(/'/g, ''), undefined, "APTITUDES");
 
                     // Loop through each key in abilities
                     Object.entries(factionCombatPatrolUnits[units].abilities).forEach(([key, value]) => {
@@ -262,26 +279,35 @@ function createDatasheet(factionName) {
 
                 let datasheetKeywords = createHtmlElement('section', datasheetFooter, "datasheet-keywords");
                 createHtmlElement('h3', datasheetKeywords, undefined, undefined, "MOTS-CLÉS:");
-
-                // Loop through each key in abilities
-                Object.entries(factionCombatPatrolUnits[units].keywords).forEach(([, value]) => {
-                    // Create a new paragraph for each key
-                    createHtmlElement('p', datasheetKeywords, undefined, undefined, value);
-
-                });
+                createHtmlElement('p', datasheetKeywords, undefined, undefined, factionCombatPatrolUnits[units].keywords);
 
                 createHtmlElement('img', datasheetFooter, undefined, undefined, factionData.img, `logo de l'armée ${factionName}`)
 
-
                 let datasheetFactionKeywords = createHtmlElement('section', datasheetFooter, "datasheet-faction-keywords");
                 createHtmlElement('h3', datasheetFactionKeywords, undefined, undefined, "MOTS-CLÉS DE FACTION:");
-
                 createHtmlElement('p', datasheetFactionKeywords, undefined, undefined, factionCombatPatrolUnits[units].factions_keywords);
-            });
+
         })
-        .catch(error => console.error('Erreur lors de la récupération du fichier JSON :', error));
+
 }
 
-// Appeler la fonction createDatasheet pour générer la datasheet
-createDatasheet("Empire T'au");
+function createArmySelector(jsonData) {
+    let armySelectorForm = createHtmlElement('form', armySelector, "army-selector-form");
+    let armySelectorFormSelect = createHtmlElement('select', armySelectorForm);
+    createHtmlElement('option', armySelectorFormSelect, undefined, undefined, 'Sélectionnez votre faction', '');
 
+    // Ajouter une option par faction du JSON
+    Object.keys(jsonData.factions).forEach(factionName => {
+        createHtmlElement('option', armySelectorFormSelect, undefined, undefined, factionName, factionName);
+    });
+
+    // Ajouter un écouteur d'événement au bouton
+    createHtmlElement('button', armySelectorForm, undefined, undefined, 'Valider', 'submit', function(event) {
+        // Empêcher le comportement par défaut du formulaire
+        event.preventDefault();
+        // Récupérer la valeur de l'option sélectionnée
+        let selectedFaction = armySelectorFormSelect.value;
+        // Appeler la fonction avec la faction sélectionnée
+        createDatasheet(selectedFaction);
+    });
+}

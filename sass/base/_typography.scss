@@ -16,6 +16,7 @@ $fontItalic: italic;
     font-weight: $fontBold;
     font-family: $fontTitle;
     color: $whiteTitle;
-    background: rgb(24, 96, 113);
-    background: linear-gradient(90deg, rgba(24, 96, 113, 1) 0%, rgba(29, 26, 27, 1) 100%);
+    background: rgb(24,96,113);
+    background: linear-gradient(90deg, rgba(24,96,113,1) 0%, rgba(29,26,27,1) 40%);
+    width: 100%;
 }
