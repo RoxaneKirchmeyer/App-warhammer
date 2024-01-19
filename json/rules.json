@@ -666,7 +666,226 @@
                 }
             }
         },
-        "Necrons": {},
+        "Necrons": {
+            "img": "img/patrols/Necrons/Necrons_logo.png",
+            "factions_rules": {
+                "combat_patrol": {
+                    "patrol_units": {
+                        "TÉTRARQUE AMONHOTEKH": {
+                            "img": "img/patrols/Necrons/Tétrarque_Amonhotekh.png",
+                            "stats": {
+                                "move": "5\"",
+                                "toughness": 5,
+                                "save": "2+",
+                                "wounds": 6,
+                                "leadership": "4+",
+                                "objective_control": 1
+                            },
+                            "description": "Les Tétrarques dirigent les Dynasties Nécrons au combat. L'esprit androïde d'Amonhotekh est plus vif que la pensée, son corps est d'une résistance implacable et ses armes sont ésotériques, anciennes et fatales. Pourtant, c'est sa volonté indomptable qui constitue son atout majeur, car elle lui permet de contrôler des armées entières.",
+                            "weapons": {
+                                "ranged": {
+                                    "Arbalète à tachyons": {
+                                        "ARMES DE TIR": "Arbalète à tachyons [TIR UNIQUE]",
+                                        "PORTÉE": "72\"",
+                                        "A": 1,
+                                        "CT": "2+",
+                                        "F": 16,
+                                        "PA": -5,
+                                        "D": "D6+2"
+                                    }
+                                },
+                                "melee": {
+                                    "Lame de Tétrarque": {
+                                        "ARMES DE MÊLÉE": "Lame de Tétrarque [BLESSURES DÉVASTATRICES]",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 4,
+                                        "CC": "2+",
+                                        "F": 8,
+                                        "PA": -3,
+                                        "D": 2
+                                    }
+                                }
+                            },
+                            "leader" : "Cette figurine peut être attachée à l'unité suivante : Guerriers Nécrons",
+                            "abilities": {
+                                "BASE" : "Meneur",
+                                "FACTION": "Protocoles de Réanimation",
+                                "Résistance Inoxydable": "À chaque attaque qui cible cette figurine, soustrayez 1 à la caractéristique de Dégâts de cette attaque."
+                            },
+                            "keywords": "INFANTERIE, PERSONNAGE, NOBLE, TÉTRARQUE, AMONHOTEKH",
+                            "factions_keywords": "NÉCRONS"
+                        },
+                        "GUERRIERS NÉCRONS": {
+                            "img": "img/patrols/Necrons/Guerrier.png",
+                            "stats": {
+                                "move": "5\"",
+                                "toughness": 4,
+                                "save": "4+",
+                                "wounds": 1,
+                                "leadership": "7+",
+                                "objective_control": 2
+                            },
+                            "description": "Les Guerriers Nécrons avancent en rangs interminables et titubants. Guère plus que des automates, ils sont cependant implacables et redoutables une fois massés et encadrés. Les corps des Guerriers peuvent s'autoréparer, même en ayant subi les pires dégâts, tandis que leurs salves incessantes fauchent l'ennemi avec une efficacité mécanique.",
+                            "weapons": {
+                                "ranged": {
+                                    "Écorcheur Gauss": {
+                                        "ARMES DE TIR": "Écorcheur Gauss [TOUCHES FATALES, TIR RAPIDE 1]",
+                                        "PORTÉE": "24\"",
+                                        "A": 1,
+                                        "CT": "4+",
+                                        "F": 4,
+                                        "PA": 0,
+                                        "D": 1
+                                    },
+                                    "Faucheuse Gauss": {
+                                        "ARMES DE TIR": "Faucheuse Gauss [TOUCHES FATALES]",
+                                        "PORTÉE": "12\"",
+                                        "A": 2,
+                                        "CT": "4+",
+                                        "F": 5,
+                                        "PA": -1,
+                                        "D": 1
+                                    }
+                                },
+                                "melee": {
+                                    "Lame de Tétrarque": {
+                                        "ARMES DE MÊLÉE": "Arme de corps à corps",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 1,
+                                        "CC": "4+",
+                                        "F": 4,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                }
+                            },
+                            "abilities": {
+                                "FACTION": "Protocoles de Réanimation"
+                            },
+                            "keywords": "INFANTERIE, LIGNE, GUERRIERS NÉCRONS",
+                            "factions_keywords": "NÉCRONS"
+                        },
+                        "DESTROYERS SKORPEKHS": {
+                            "img": "img/patrols/Necrons/Destroyer_Skorpekhs.png",
+                            "stats": {
+                                "move": "7\"",
+                                "toughness": 6,
+                                "save": "3+",
+                                "wounds": 3,
+                                "leadership": "7+",
+                                "objective_control": 2
+                            },
+                            "description": "Les Destroyers Skorpekhs favorisent le corps à corps pour massacrer leurs victimes. Bien que disgracieux en dehors du champ de bataille, en combat, leurs trois jambes leur permettent de franchir les lignes ennemies en pirouettant tout en taillant à coups de lames d'hyperphase, dont les coups sont presque impossibles à parer ou à esquiver.",
+                            "weapons": {
+                                "melee": {
+                                    "Armes d'hyperphase skorpekhs": {
+                                        "ARMES DE MÊLÉE": "Armes d'hyperphase skorpekhs",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 4,
+                                        "CC": "3+",
+                                        "F": 7,
+                                        "PA": -2,
+                                        "D": 2
+                                    }
+                                }
+                            },
+                            "wargear_abilities" :{
+                                "Plasmacyte" : "Une fois par bataille pour chaque Plasmacyte que possède cette unité, quand cette unité est choisie pour combattre, vous pouvez utiliser cette aptitude. En ce cas, jusqu'à la fin de la phase, les armes de mêlée dont sont équipées les figurines de cette unité ont l'aptitude [BLESSURES DÉVASTATRICES].",
+                                "Note des Concepteurs" : "Placez le nombre adéquat de pions de Plasmacyte à côté de l'unité, et retirez-en 1 chaque fois que cette unité utilise cette aptitude."
+                            },
+                            "abilities": {
+                                "FACTION": "Protocoles de Réanimation"
+                            },
+                            "keywords": "INFANTERIE, DESTROYERS SKORPEKHS",
+                            "factions_keywords": "NÉCRONS"
+                        },
+                        "NUÉES DE SCARABÉES CANOPTEKS": {
+                            "img": "img/patrols/Necrons/Scarabées_Canopteks.png",
+                            "stats": {
+                                "move": "9\"",
+                                "toughness": 2,
+                                "save": "6+",
+                                "wounds": 4,
+                                "leadership": "8+",
+                                "objective_control": 0
+                            },
+                            "description": "Les Scarabées Canopteks attaquent sous forme de nuée volante. Ils s'abattent sur l'ennemi dans un bruit strident avant de débiter infanterie et blindés à l'aide de leurs mandibules, pour les convertir en énergie brute. Souvent en première vague d'un assaut nécron, ces insectes mécaniques sèment la peur et la destruction.",
+                            "weapons": {
+                                "melee": {
+                                    "Mandibules": {
+                                        "ARMES DE MÊLÉE": "Mandibules [TOUCHES FATALES]",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 6,
+                                        "CC": "5+",
+                                        "F": 2,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                }
+                            },
+                            "abilities": {
+                                "BASE" : "Destruction Néfaste 1",
+                                "FACTION": "Protocoles de Réanimation"
+                            },
+                            "keywords": "NUÉE, VOL, CANOPTEK, NUÉES DE SCARABÉES",
+                            "factions_keywords": "NÉCRONS"
+                        },
+                        "MARAUDEUR CANOPTEK": {
+                            "img": "img/patrols/Necrons/Maraudeur_Canoptek.png",
+                            "stats": {
+                                "move": "7\"",
+                                "toughness": 8,
+                                "save": "3+",
+                                "wounds": 12,
+                                "leadership": "8+",
+                                "objective_control": 4
+                            },
+                            "description": "Les Maraudeurs Canopteks se meuvent avec une grâce dérangeante. Qu'ils patrouillent dans les armureries de leurs maîtres telles des sentinelles infatigables ou fournissent un appui feu mobile aux légions de Nécrons, les Maraudeurs annihilent tout ce qui ose se dresser devant eux par de cuisantes décharges de leurs éclateurs du Jugement Dernier",
+                            "weapons": {
+                                "ranged": {
+                                    "Éclateur du Jugement Dernier": {
+                                        "ARMES DE TIR": "Éclateur du Jugement Dernier [DÉFLAGRATION, LOURD]",
+                                        "PORTÉE": "48\"",
+                                        "A": "D6+1",
+                                        "CT": "4+",
+                                        "F": 14,
+                                        "PA": -3,
+                                        "D": 3
+                                    },
+                                    "Écorcheur Gauss jumelé": {
+                                        "ARMES DE TIR": "Faucheuse Gauss [TOUCHES FATALES, TIR RAPIDE 1, JUMELÉ]",
+                                        "PORTÉE": "24\"",
+                                        "A": 1,
+                                        "CT": "4+",
+                                        "F": 4,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                },
+                                "melee": {
+                                    "Jambes de Maraudeur": {
+                                        "ARMES DE MÊLÉE": "Jambes de Maraudeur",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 3,
+                                        "CC": "4+",
+                                        "F": 6,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                }
+                            },
+                            "damaged" : "Tant que cette figurine a 1-4 PV restants, à chaque attaque de cette figurine, soustrayez 1 au jet de Touche.",
+                            "abilities": {
+                                "BASE" : "Destruction Néfaste D3",
+                                "FACTION": "Protocoles de Réanimation"
+                            },
+                            "keywords": "VÉHICULE, MARCHEUR, CANOPTEK, MARAUDEUR",
+                            "factions_keywords": "NÉCRONS"
+                        }
+                    }
+                }
+            }
+        },
         "Space Marines": {
             "img": "img/patrols/Space_Marines/Space_Marines_logo.png",
             "factions_rules": {
@@ -1073,6 +1292,206 @@
                 }
             }
         },
-        "Tyranids": {}
+        "Tyranides": {
+            "img": "img/patrols/Tyranides/Tyranides_logo.png",
+            "factions_rules": {
+                "combat_patrol": {
+                    "patrol_units": {
+                        "TERREUR DE VARDENGHAST": {
+                            "img": "img/patrols/Tyranides/Terreur_de_Vardenghast.png",
+                            "stats": {
+                                "move": "12\"",
+                                "toughness": 5,
+                                "save": "4+",
+                                "wounds": 6,
+                                "leadership": "7+",
+                                "objective_control": 1
+                            },
+                            "description": "En tant que Primat Tyranide, la Terreur de Vardenghast possède la force physique et synaptique d'une bête de guerre alpha, tout en bénéficiant d'une vitesse et d'une agilité accrue grâce à ses larges ailes de cuir. Fondant en plein cœur de l'ennemi, il lacère et pourfend jusqu'à ne laisser des corps mutilés et des proies en fuite.",
+                            "weapons": {
+                                "melee": {
+                                    "Griffes de Primat": {
+                                        "ARMES DE MÊLÉE": "Griffes de Primat",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 6,
+                                        "CC": "2+",
+                                        "F": 6,
+                                        "PA": -1,
+                                        "D": 2
+                                    }
+                                }
+                            },
+                            "abilities": {
+                                "BASE": "Frappe en Profondeur",
+                                "FACTION": "L'Ombre dans le Warp, Synapse",
+                                "Agonie Vengeresse": "Si cette figurine est détruite par une attaque de mêlée, si elle n'a pas combattu à cette phase, jetez 1 D6: sur 4+, ne la retirez pas du jeu. La figurine détruite peut combattre après que l'unité attaquante a résolu ses attaques, puis elle est retirée du jeu."
+                            },
+                            "keywords": "INFANTERIE, PERSONNAGE, VOL, GRAND DÉVOREUR, SYNAPSE, ENVAHISSEUR D'AVANT-GARDE, PRIMAT TYRANIDE AILÉ, TERREUR DE VARDENGHAST",
+                            "factions_keywords": "TYRANIDES"
+                        },
+                        "PSYCHOPHAGE": {
+                            "img": "img/patrols/Tyranides/Psychophage.png",
+                            "stats": {
+                                "move": "8\"",
+                                "toughness": 9,
+                                "save": "3+",
+                                "wounds": 10,
+                                "leadership": "8+",
+                                "objective_control": 3
+                            },
+                            "description": "Ces monstres se ruent au combat à une vitesse effrayante. Ils dévorent tous les organismes proies sur leur passage, mais ont une préférence pour ceux dotés de capacités psychiques. On ignore comment ils assimilent cette énergie ésotérique, mais cela leur permet de projeter des cendres psychocorrosives qui font détoner l'âme de leurs victimes.",
+                            "weapons": {
+                                "ranged": {
+                                    "Torrent psychoclaste": {
+                                        "ARMES DE TIR": "Torrent psychoclaste [IGNORE LE COUVERT, TORRENT]",
+                                        "PORTÉE": "12\"",
+                                        "A": "D6",
+                                        "CT": "N/A",
+                                        "F": 6,
+                                        "PA": -1,
+                                        "D": 1
+                                    }
+                                },
+                                "melee": {
+                                    "Griffes et gueule tentaculaire": {
+                                        "ARMES DE MÊLÉE": "Griffes et gueule tentaculaire [ANTI-PSYKER 4+, BLESSURES DÉVASTATRICES]",
+                                        "PORTÉE": "Mêlée",
+                                        "A": "D6+1",
+                                        "CC": "3+",
+                                        "F": 6,
+                                        "PA": -1,
+                                        "D": 2
+                                    }
+                                }
+                            },
+                            "abilities": {
+                                "BASE": "Destruction Néfaste 1, Insensible à la Douleur 5+",
+                                "FACTION": "Synapse",
+                                "Frénésie Nourricière": "À chaque attaque de mêlée de cette figurine qui cible une unité qui est en dessous de son Effectif Initial, ajoutez 1 au jet de Touche. Si cette cible est également En Dessous de son Demi-effectif, ajoutez 1 au jet de Blessure également."
+                            },
+                            "keywords": "MONSTRE, GRAND DÉVOREUR, RÉCOLTEUR, PSYCHOPHAGE",
+                            "factions_keywords": "TYRANIDES"
+                        },
+                        "TERMAGANTS": {
+                            "img": "img/patrols/Tyranides/Termagants.png",
+                            "stats": {
+                                "move": "6\"",
+                                "toughness": 3,
+                                "save": "5+",
+                                "wounds": 1,
+                                "leadership": "8+",
+                                "objective_control": 2
+                            },
+                            "description": "Prédateurs rampants attaquant en essaims immenses, les Termagants furent engendrés à l'origine pour patrouiller dans les étroites coursives des vaisseaux-ruches. Ils tiennent leur proie sous un feu nourri, cherchant à prendre l'ennemi de flanc et à l'entourer tandis qu'ils érodent ses effectifs.",
+                            "weapons": {
+                                "ranged": {
+                                    "Écorcheur": {
+                                        "ARMES DE TIR": "Écorcheur [ASSAUT]",
+                                        "PORTÉE": "18\"",
+                                        "A": 1,
+                                        "CT": "4+",
+                                        "F": 5,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                },
+                                "melee": {
+                                    "Griffes et dents chitineuses": {
+                                        "ARMES DE MÊLÉE": "Griffes et dents chitineuses",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 1,
+                                        "CC": "4+",
+                                        "F": 3,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                }
+                            },
+                            "patrolSquad" : "Au début de l'étape Déclarer les Formations de Bataille, avant de placer la moindre unité, cette unité peut être scindée en deux unités de dix figurines chacune.",
+                            "abilities": {
+                                "FACTION": "Synapse",
+                                "Horreurs Prédatrices": "Une fois par tour, quand une unité ennemie finit un mouvement Normal, d'Avance ou de Retraite à 9” de cette unité, si cette unité n'est à Portée d'Engagement d'aucune unité ennemie, elle peut faire un mouvement Normal de jusqu'à D6\"."
+                            },
+                            "keywords": "INFANTERIE, LIGNE, GRAND DÉVOREUR, MULTITUDE INFINIE, TERMAGANTS",
+                            "factions_keywords": "TYRANIDES"
+                        },
+                        "BARBGAUNTS": {
+                            "img": "img/patrols/Tyranides/Barbgaunts.png",
+                            "stats": {
+                                "move": "6\"",
+                                "toughness": 4,
+                                "save": "4+",
+                                "wounds": 2,
+                                "leadership": "8+",
+                                "objective_control": 1
+                            },
+                            "description": "Les Barbgaunts ne sont rien de plus que des armes vivantes, dont les corps et les lance-barbillons sont asservis à la volonté d'un ganglion parasite qui les aiguille au combat. Là, ils lâchent des salves de barbillons chitineux qui détonent dans la fureur de violents spasmes musculaires et pétrifient leurs victimes sous une pluie de projectiles.",
+                            "weapons": {
+                                "ranged": {
+                                    "Lance-barbillons": {
+                                        "ARMES DE TIR": "Lance-barbillons [DÉFLAGRATION, LOURD]",
+                                        "PORTÉE": "24\"",
+                                        "A": "D6",
+                                        "CT": "4+",
+                                        "F": 5,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                },
+                                "melee": {
+                                    "Griffes et dents chitineuses": {
+                                        "ARMES DE MÊLÉE": "Griffes et dents chitineuses",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 1,
+                                        "CC": "4+",
+                                        "F": 4,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                }
+                            },
+                            "abilities": {
+                                "FACTION": "Synapse",
+                                "Bombardement Perturbateur": "À votre phase de Tir, après que cette unité a tiré, choisissez 1 unité Infanterie ennemie touchée par une ou plusieurs de ces attaques. Jusqu'à la fin du prochain tour adverse, l'unité ennemie est désorganisée. Tant qu'une unité est désorganisée, soustrayez 2 à sa caractéristique de Mouvement et soustrayez 2 à ses jets d'Avance et de Charge."
+                            },
+                            "keywords": "INFANTERIE, GRAND DÉVOREUR, BARBGAUNTS",
+                            "factions_keywords": "TYRANIDES"
+                        },
+                        "BONDISSEURS DE VON RYAN": {
+                            "img": "img/patrols/Tyranides/Bondisseurs_de_Von_Ryan.png",
+                            "stats": {
+                                "move": "10\"",
+                                "toughness": 5,
+                                "save": "4+",
+                                "wounds": 3,
+                                "leadership": "8+",
+                                "objective_control": 1
+                            },
+                            "description": "Chasseurs furtifs et experts de l'embuscade, les Bondisseurs de Von Ryan sont vifs, agiles et particulièrement dangereux en terrain dense. Tels des mines vivantes, ils restent immobiles à l'endroit optimal pour causer autant de dégâts que possible. Quand ils sentent le moment idéal, ils massacrent tout dans une frénésie meurtrière.",
+                            "weapons": {
+                                "melee": {
+                                    "Serres de Bondisseur": {
+                                        "ARMES DE MÊLÉE": "Serres de Bondisseur",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 6,
+                                        "CC": "3+",
+                                        "F": 5,
+                                        "PA": -1,
+                                        "D": 1
+                                    }
+                                }
+                            },
+                            "abilities": {
+                                "BASE": "Combat en Premier, Infiltrateurs, Discrétion",
+                                "FACTION": "Synapse",
+                                "Grand Bond": "Vous pouvez cibler cette unité avec le Stratagème Intervention Héroïque pour 0PC, et vous pouvez le faire même si vous avez déjà utilisé ce Stratagème sur une unité différente à cette phase."
+                            },
+                            "keywords": "INFANTERIE, GRAND DÉVOREUR, ENVAHISSEUR D'AVANT-GARDE, BONDISSEURS DE VON RYAN",
+                            "factions_keywords": "TYRANIDES"
+                        }
+                    }
+                }
+            }
+        }
     }
 }
