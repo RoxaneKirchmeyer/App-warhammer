@@ -167,7 +167,6 @@ footer img {
 }
 .datasheet-weapons th,
 .datasheet-weapons td {
-  width: 20px;
   padding: 5px;
 }
 .datasheet-weapons table {
@@ -200,7 +199,7 @@ footer img {
   background-color: #186071;
 }
 
-.adepta-sororitas {
+.Adepta-Sororitas {
   background-color: #5d0300;
 }
 
