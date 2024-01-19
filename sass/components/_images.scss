@@ -1,3 +1,15 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .logo-warhammer-40k{
+        width: 1010px;
+        height: 278px;
+    }
+}
+
+
 .overlay {
     position: absolute;
     width: 200px;

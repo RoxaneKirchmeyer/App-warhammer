@@ -11,9 +11,31 @@
   width: 100%;
 }
 
+main h1 {
+  letter-spacing: 6px;
+  margin: 0;
+  padding: 0 10px 10px 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+}
+
 body {
   margin: 0;
   background-color: #c0c2c0;
+}
+
+main {
+  height: 100vh;
+  background: rgb(169, 169, 169);
+  background: linear-gradient(180deg, rgb(169, 169, 169) 0%, rgb(233, 234, 236) 100%);
+}
+
+.hidden {
+  display: none;
 }
 
 .test {
@@ -87,10 +109,52 @@ header {
   margin-bottom: 200px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+select {
+  width: 350px;
+}
+
+select,
+button {
+  font-family: "Heebo", sans-serif;
+  font-size: 1.5em;
+  border: 1px solid #345163;
+  color: #345163;
+  background-color: #EAEBED;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 15px;
+}
+
+button {
+  letter-spacing: 3px;
+  width: 50%;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
 footer {
   height: 150px;
   background-color: gray;
   margin-top: 200px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main .logo-warhammer-40k {
+  width: 1010px;
+  height: 278px;
 }
 
 .overlay {
@@ -225,6 +289,7 @@ footer img {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
+  background-color: #c0c2c0;
 }
 .datasheet header {
   background-color: #1d1a1b;

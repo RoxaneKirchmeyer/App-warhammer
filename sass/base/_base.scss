@@ -3,6 +3,16 @@ body {
     background-color: $datasheetBgr;
 }
 
+main {
+    height: 100vh;
+    background: rgb(169, 169, 169);
+    background: linear-gradient(180deg, rgba(169, 169, 169, 1) 0%, rgba(233, 234, 236, 1) 100%);
+}
+
+.hidden {
+    display: none;
+}
+
 .test {
     height: 30vh;
 }
