@@ -1,3 +1,21 @@
-$fontTitle : 'Oswald', sans-serif;
-$fontSubtitle : 'Barlow', sans-serif;
-$fontText : 'Heebo', sans-serif;
+$fontTitle : 'Oswald',
+sans-serif;
+$fontSubtitle : 'Barlow',
+sans-serif;
+$fontText : 'Heebo',
+sans-serif;
+$fontBold: bold;
+$fontItalic: italic;
+
+// Main h2 datasheet
+.datasheet-name {
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0 10px 10px 20px;
+    margin-top: 20px;
+    font-weight: $fontBold;
+    font-family: $fontTitle;
+    color: $whiteTitle;
+    background: rgb(24, 96, 113);
+    background: linear-gradient(90deg, rgba(24, 96, 113, 1) 0%, rgba(29, 26, 27, 1) 100%);
+}

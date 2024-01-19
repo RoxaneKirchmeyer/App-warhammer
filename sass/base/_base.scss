@@ -1,187 +1,79 @@
-h2,
-p,
-li {
-    font-weight: bold;
-}
-
-ul {
-    display: flex;
-}
-
-li {
-    list-style: none;
-}
-
 body {
     margin: 0;
-    background-color: gainsboro;
+    background-color: $datasheetBgr;
 }
 
 .test {
     height: 30vh;
 }
 
-.datasheet-profile {
-    flex: 1;
-    background-color: $blackBgr;
+h2,
+p {
+    font-weight: $fontBold;
+}
 
-    h2 {
-        color: $whiteTitle;
-        background-color: $blueTau;
-        font-family: $fontTitle;
-        letter-spacing: 2px;
-        margin: 0;
-        padding: 0 10px 10px 20px;
-        margin-top: 20px;
-    }
-
-    table{
-        border-collapse: collapse;
-    }
-
-    .profile-header {
-        margin: 0;
-        padding: 0 15px;
-        justify-content: center;
-        background-color: $blueTau;
-        gap: 10px;
-
-        th { 
-            font-family: $fontText;
-            color: $whiteTitle;
-            font-size: 10px;
-            padding: 0 10px;
-            border: 5px solid $blueTau;
-            border-bottom: 0px;
-            border-top: 0px;
-            text-align: center;
-            width: 20px;
-        }
-    }
-
-    .profile-values {
-        padding-bottom: 10px;
-        border-bottom-right-radius: 100px;
-
-        td {
-            font-family: $fontText;
-            font-weight: bold;
-            text-align: center;
-            color: $blueTau;
-            background-color: $whiteStats;
-            border: 5px solid $blueTau;
-            padding: 10px;
-            border-top-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            font-size: 20px;
-            line-height: 20px;
-            width: 20px;
-        }
-    }
+span {
+    font-weight: $fontBold;
 }
 
 .datasheet-description {
-    margin-left: 225px;
-    flex: 1;
-
-    h2 {
-        background-color: rgba(125, 17, 17, 0.9);
-        border-bottom-left-radius: 100px;
+    h3 {
+        background-color: $redBgrPatrol;
+        font-family: $fontSubtitle;
         color: $whiteTitle;
+        text-align: right;
+        border-bottom-left-radius: 100px;
         margin: 0;
-        font-size: 20px;
+        font-size: 1.25rem;
         padding: 10px;
         padding-left: 30px;
-        text-align: right;
-        font-family: $fontSubtitle;
     }
 
     p {
         font-family: $fontText;
-        font-style: italic;
-        font-weight: 200;
+        font-style: $fontItalic;
         color: $whiteTitle;
-        font-size: 12px;
+        font-weight: 200;
+        font-size: 0.99rem;
         padding: 0 10px;
     }
 }
 
-.datasheet-header {
-    display: flex;
-    justify-content: center;
-    background-color: $blackBgr;
-    position: relative;
-    height: 200px;
-
-    .overlay {
-        position: absolute;
-        width: 200px;
-        display: block;
-        top: 0;
-        left: 35%;
-        transform: translateY(-45%);
-        z-index: 1;
-
-    }
-}
-
-.datasheet {
-    margin: auto;
-    width: 90%;
-}
-
-.weapon {
-    background-color: $whiteStats;
-
-    th, td{
-        width: 20px;
-    }
-
-    .characteristic-title {
-        width: 150px;
-        text-align: left;
-    }
-
-    table {
-        border-collapse: collapse;
-        text-align: center;
-        width: 60%;
-        border-top: 2px solid $blueTau;
-        border-right: 2px solid $blueTau;
-        border-left: 2px solid $blueTau;
-    }
-
-    thead {
-        background-color: $blueTau;
+.datasheet-wargear-abilities {
+    h3 {
         color: $whiteTitle;
         font-family: $fontTitle;
         font-size: 16px;
         letter-spacing: 1.5px;
-
-        th {
-            padding: 5px;
-        }
-
-
+        padding: 5px;
+        padding-left: 80px;
     }
 
-    tbody {
+    p {
         font-family: $fontSubtitle;
-        background-color: $whiteStats;
-        font-size: 15px;
-        font-weight:500;
-
-        .characteristic-title {
-            padding-left: 5px;
-        }
-
-        td {
-            padding: 5px 0;
-            border-bottom: 2px dotted black;
-        }
-
-        .logoThead {
-            border-bottom: none;
-        }
+        font-size: 0.93rem;
+        font-weight: 500;
+        padding: 5px 0;
+        border-bottom: 2px dotted black;
+        padding-left: 80px;
     }
+}
+
+.datasheet-abilities {
+    h3 {
+        color: $whiteTitle;
+        font-family: $fontTitle;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        padding: 5px;
+    }
+
+    p {
+        font-family: $fontSubtitle;
+        font-size: 0.93rem;
+        font-weight: 500;
+        padding: 5px 0;
+        border-bottom: 2px dotted black;
+    }
+
 }

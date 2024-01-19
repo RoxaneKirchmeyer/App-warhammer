@@ -1,136 +1,166 @@
-h2,
-p,
-li {
+.datasheet-name {
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0 10px 10px 20px;
+  margin-top: 20px;
   font-weight: bold;
-}
-
-ul {
-  display: flex;
-}
-
-li {
-  list-style: none;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  background: rgb(24, 96, 113);
+  background: linear-gradient(90deg, rgb(24, 96, 113) 0%, rgb(29, 26, 27) 100%);
 }
 
 body {
   margin: 0;
-  background-color: gainsboro;
+  background-color: #c0c2c0;
 }
 
 .test {
   height: 30vh;
 }
 
-.datasheet-profile {
-  flex: 1;
-  background-color: #1d1a1b;
+h2,
+p {
+  font-weight: bold;
 }
-.datasheet-profile h2 {
+
+span {
+  font-weight: bold;
+}
+
+.datasheet-description h3 {
+  background-color: #6f0c0f;
+  font-family: "Barlow", sans-serif;
   color: #ffffff;
-  background-color: #186071;
+  text-align: right;
+  border-bottom-left-radius: 100px;
+  margin: 0;
+  font-size: 1.25rem;
+  padding: 10px;
+  padding-left: 30px;
+}
+.datasheet-description p {
+  font-family: "Heebo", sans-serif;
+  font-style: italic;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 0.99rem;
+  padding: 0 10px;
+}
+
+.datasheet-wargear-abilities h3 {
+  color: #ffffff;
   font-family: "Oswald", sans-serif;
-  letter-spacing: 2px;
-  margin: 0;
-  padding: 0 10px 10px 20px;
-  margin-top: 20px;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  padding: 5px;
+  padding-left: 80px;
 }
-.datasheet-profile table {
-  border-collapse: collapse;
+.datasheet-wargear-abilities p {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.93rem;
+  font-weight: 500;
+  padding: 5px 0;
+  border-bottom: 2px dotted black;
+  padding-left: 80px;
 }
-.datasheet-profile .profile-header {
-  margin: 0;
-  padding: 0 15px;
-  justify-content: center;
-  background-color: #186071;
-  gap: 10px;
+
+.datasheet-abilities h3 {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  padding: 5px;
 }
-.datasheet-profile .profile-header th {
+.datasheet-abilities p {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.93rem;
+  font-weight: 500;
+  padding: 5px 0;
+  border-bottom: 2px dotted black;
+}
+
+.overlay {
+  position: absolute;
+  width: 200px;
+  display: block;
+  top: 0;
+  left: 38%;
+  transform: translateY(-45%);
+  z-index: 1;
+}
+
+.logoThead {
+  border-bottom: none;
+}
+
+footer img {
+  width: 120px;
+  position: absolute;
+  top: 40%;
+  left: 66.5%;
+  transform: translateY(-45%);
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .datasheet header .overlay {
+    position: absolute;
+    width: 200px;
+    display: block;
+    top: 0;
+    left: 40%;
+    transform: translateY(-45%);
+    z-index: 1;
+  }
+  footer img {
+    width: 120px;
+    position: absolute;
+    top: 40%;
+    left: 65.6%;
+    transform: translateY(-45%);
+  }
+}
+.datasheet-profiles {
+  margin: 15px 0;
+  padding: 15px;
+  border-spacing: 15px;
+  border-collapse: separate;
+}
+.datasheet-profiles thead th {
   font-family: "Heebo", sans-serif;
   color: #ffffff;
-  font-size: 10px;
+  font-size: 0.75rem;
   padding: 0 10px;
-  border: 5px solid #186071;
   border-bottom: 0px;
   border-top: 0px;
   text-align: center;
   width: 20px;
 }
-.datasheet-profile .profile-values {
-  padding-bottom: 10px;
-  border-bottom-right-radius: 100px;
-}
-.datasheet-profile .profile-values td {
+.datasheet-profiles tbody td {
   font-family: "Heebo", sans-serif;
   font-weight: bold;
   text-align: center;
-  color: #186071;
   background-color: #e6e9e2;
-  border: 5px solid #186071;
   padding: 10px;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  font-size: 20px;
+  font-size: 1.45rem;
   line-height: 20px;
+  width: 30px;
+  height: 30px;
+  color: #186071;
+  border: 3px solid #186071;
+}
+
+.datasheet-melee-weapons {
+  border-collapse: collapse;
+}
+.datasheet-melee-weapons th,
+.datasheet-melee-weapons td {
   width: 20px;
+  padding: 5px;
 }
-
-.datasheet-description {
-  margin-left: 225px;
-  flex: 1;
-}
-.datasheet-description h2 {
-  background-color: rgba(125, 17, 17, 0.9);
-  border-bottom-left-radius: 100px;
-  color: #ffffff;
-  margin: 0;
-  font-size: 20px;
-  padding: 10px;
-  padding-left: 30px;
-  text-align: right;
-  font-family: "Barlow", sans-serif;
-}
-.datasheet-description p {
-  font-family: "Heebo", sans-serif;
-  font-style: italic;
-  font-weight: 200;
-  color: #ffffff;
-  font-size: 12px;
-  padding: 0 10px;
-}
-
-.datasheet-header {
-  display: flex;
-  justify-content: center;
-  background-color: #1d1a1b;
-  position: relative;
-  height: 200px;
-}
-.datasheet-header .overlay {
-  position: absolute;
-  width: 200px;
-  display: block;
-  top: 0;
-  left: 35%;
-  transform: translateY(-45%);
-  z-index: 1;
-}
-
-.datasheet {
-  margin: auto;
-  width: 90%;
-}
-
-.weapon {
-  background-color: #e6e9e2;
-}
-.weapon th, .weapon td {
-  width: 20px;
-}
-.weapon .characteristic-title {
-  width: 150px;
-  text-align: left;
-}
-.weapon table {
+.datasheet-melee-weapons table {
   border-collapse: collapse;
   text-align: center;
   width: 60%;
@@ -138,31 +168,167 @@ body {
   border-right: 2px solid #186071;
   border-left: 2px solid #186071;
 }
-.weapon thead {
-  background-color: #186071;
+.datasheet-melee-weapons thead {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   letter-spacing: 1.5px;
 }
-.weapon thead th {
-  padding: 5px;
-}
-.weapon tbody {
+.datasheet-melee-weapons tbody {
   font-family: "Barlow", sans-serif;
   background-color: #e6e9e2;
-  font-size: 15px;
+  font-size: 0.93rem;
   font-weight: 500;
 }
-.weapon tbody .characteristic-title {
-  padding-left: 5px;
-}
-.weapon tbody td {
+.datasheet-melee-weapons tbody td {
   padding: 5px 0;
   border-bottom: 2px dotted black;
+  text-align: center;
 }
-.weapon tbody .logoThead {
-  border-bottom: none;
+
+.empire-tau {
+  background-color: #186071;
+}
+
+.adepta-sororitas {
+  background-color: #5d0300;
+}
+
+.thousand-sons {
+  background-color: #005d66;
+}
+
+.necrons {
+  background-color: #00592e;
+}
+
+.space-marines {
+  background-color: #516765;
+}
+
+.tyranids {
+  background-color: #3e1844;
+}
+
+.datasheet {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.datasheet header {
+  background-color: #1d1a1b;
+  position: relative;
+  height: 200px;
+  display: flex;
+}
+.datasheet header .datasheet-profiles {
+  background-color: #1d1a1b;
+  width: 50%;
+  display: block;
+}
+.datasheet header .datasheet-profiles thead {
+  margin: 0;
+  padding: 0 15px;
+}
+.datasheet header .datasheet-profiles tbody {
+  padding-bottom: 10px;
+  border-bottom-right-radius: 100px;
+}
+.datasheet header .datasheet-profiles h2 {
+  background-color: #186071;
+}
+.datasheet header .datasheet-profiles .profile-header {
+  background-color: #186071;
+}
+.datasheet header .datasheet-description {
+  width: 50%;
+}
+.datasheet .datasheet-other-rules {
+  background-color: #e6e9e2;
+  width: 70%;
+  border-top: none;
+  border-bottom: 2px solid #186071;
+  border-left: 2px solid #186071;
+  border-right: 2px solid #186071;
+  height: 50vh;
+}
+.datasheet .datasheet-melee-weapons {
+  margin-top: 25px;
+  background-color: #e6e9e2;
+  width: 100%;
+}
+.datasheet .datasheet-melee-weapons th:nth-child(2) {
+  width: 150px;
+  text-align: left;
+}
+.datasheet .datasheet-melee-weapons tbody td:nth-child(2) {
+  text-align: left;
+}
+.datasheet .datasheet-abilities {
+  background-color: #e6e9e2;
+  border-left: none;
+  border-right: 2px solid #186071;
+  border-top: none;
+  border-bottom: 2px solid #186071;
+  width: 29.65%;
+}
+.datasheet .datasheet-abilities h3,
+.datasheet .datasheet-abilities p {
+  margin: 25px 25px 0px 25px;
+}
+.datasheet footer {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.datasheet footer .datasheet-keywords {
+  width: 71%;
+  background-color: #b9b7b8;
+  border-top: none;
+  border-left: 2px solid #186071;
+  border-right: 2px solid #186071;
+  border-bottom: 2px solid #186071;
+}
+.datasheet footer .datasheet-keywords h3 {
+  padding: 10px;
+  padding-left: 40px;
+  margin: 0 0 0 25px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+}
+.datasheet footer .datasheet-keywords p {
+  padding: 10px;
+  padding-left: 40px;
+  margin: 0 0 0 25px;
+  font-size: 1rem;
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+}
+.datasheet footer .datasheet-faction-keywords {
+  width: 30%;
+  background-color: #020e0f;
+  border-top: none;
+  border-left: none;
+  border-right: 2px solid #186071;
+  border-bottom: 2px solid #186071;
+}
+.datasheet footer .datasheet-faction-keywords h3 {
+  padding: 10px;
+  padding-left: 40px;
+  margin: 0 0 0 25px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+}
+.datasheet footer .datasheet-faction-keywords p {
+  padding: 10px;
+  padding-left: 40px;
+  margin: 0 0 0 25px;
+  font-size: 1rem;
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .simulateur {

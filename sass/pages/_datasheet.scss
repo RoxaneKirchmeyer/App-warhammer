@@ -1,0 +1,144 @@
+.datasheet {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+
+    header {
+        background-color: $blackBgr;
+        position: relative;
+        height: 200px;
+        display: flex;
+
+        .datasheet-profiles {
+            background-color: $blackBgr;
+            width: 50%;
+            display: block;
+
+            thead {
+                margin: 0;
+                padding: 0 15px;
+            }
+
+            tbody {
+                padding-bottom: 10px;
+                border-bottom-right-radius: 100px;
+            }
+
+            // Seul style appliqué spécifiquement selon la faction
+            h2 {
+                background-color: $blueTau;
+            }
+
+            // Seul style appliqué spécifiquement selon la faction
+            .profile-header {
+                background-color: $blueTau;
+            }
+        }
+
+        .datasheet-description {
+            width: 50%;
+        }
+    }
+
+    .datasheet-other-rules {
+        background-color: $whiteStats;
+        width: 70%;
+        border-top: none;
+        border-bottom: 2px solid $blueTau;
+        border-left: 2px solid $blueTau;
+        border-right: 2px solid $blueTau;
+        height: 50vh;
+    }
+
+    .datasheet-melee-weapons {
+        margin-top: 25px;
+        background-color: $whiteStats;
+        width: 100%;
+
+        th:nth-child(2) {
+            width: 150px;
+            text-align: left;
+        }
+
+        tbody {
+            td:nth-child(2) {
+                text-align: left;
+            }
+        }
+    }
+
+    .datasheet-abilities {
+        background-color: $whiteStats;
+        border-left: none;
+        border-right: 2px solid $blueTau;
+        border-top: none;
+        border-bottom: 2px solid $blueTau;
+        width: 29.65%;
+
+        h3,
+        p {
+            margin: 25px 25px 0px 25px;
+        }
+    }
+
+    footer {
+        display: flex;
+        width: 100%;
+        position: relative;
+
+        .datasheet-keywords {
+            width: 71%;
+            background-color: $greyBgrFooter;
+            border-top: none;
+            border-left: 2px solid $blueTau;
+            border-right: 2px solid $blueTau;
+            border-bottom: 2px solid $blueTau;
+
+            h3 {
+                padding: 10px;
+                padding-left: 40px;
+                margin: 0 0 0 25px;
+                font-family: $fontSubtitle;
+                font-weight: 300;
+            }
+
+            p {
+                padding: 10px;
+                padding-left: 40px;
+                margin: 0 0 0 25px;
+                font-size: 1rem;
+                font-family: $fontText;
+                font-weight: $fontBold;
+            }
+        }
+
+        .datasheet-faction-keywords {
+            width: 30%;
+            background-color: $blackBgrFooter;
+            border-top: none;
+            border-left: none;
+            border-right: 2px solid $blueTau;
+            border-bottom: 2px solid $blueTau;
+
+            h3 {
+                padding: 10px;
+                padding-left: 40px;
+                margin: 0 0 0 25px;
+                font-family: $fontSubtitle;
+                font-weight: 300;
+                color: $whiteTitle;
+            }
+
+            p {
+                padding: 10px;
+                padding-left: 40px;
+                margin: 0 0 0 25px;
+                font-size: 1rem;
+                font-family: $fontText;
+                font-weight: $fontBold;
+                color: $whiteTitle;
+            }
+        }
+    }
+}

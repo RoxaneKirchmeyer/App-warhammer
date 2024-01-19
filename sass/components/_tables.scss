@@ -1,0 +1,78 @@
+.datasheet-profiles {
+    margin: 15px 0;
+    padding: 15px;
+    border-spacing: 15px;
+    border-collapse: separate;
+    thead {
+        th {
+            font-family: $fontText;
+            color: $whiteTitle;
+            font-size: 0.75rem;
+            padding: 0 10px;
+            border-bottom: 0px;
+            border-top: 0px;
+            text-align: center;
+            width: 20px;
+        }
+    }
+
+    tbody {
+        td {
+            font-family: $fontText;
+            font-weight: $fontBold;
+            text-align: center;
+            background-color: $whiteStats;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-size: 1.45rem;
+            line-height: 20px;
+            width: 30px;
+            height: 30px;
+            // couleur du texte en fonction de la faction
+            color: $blueTau;
+            // couleur de bordure en fonction de la faction
+            border: 3px solid $blueTau
+        }
+    }
+}
+
+.datasheet-melee-weapons {
+    border-collapse: collapse;
+
+    th,
+    td {
+        width: 20px;
+        padding: 5px;
+    }
+
+    table {
+        border-collapse: collapse;
+        text-align: center;
+        width: 60%;
+        // Couleur en fonction de la faction
+        border-top: 2px solid $blueTau;
+        border-right: 2px solid $blueTau;
+        border-left: 2px solid $blueTau;
+    }
+
+    thead {
+        color: $whiteTitle;
+        font-family: $fontTitle;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+    }
+
+    tbody {
+        font-family: $fontSubtitle;
+        background-color: $whiteStats;
+        font-size: 0.93rem;
+        font-weight: 500;
+
+        td {
+            padding: 5px 0;
+            border-bottom: 2px dotted black;
+            text-align: center;
+        }
+    }
+}

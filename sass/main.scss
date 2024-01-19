@@ -3,7 +3,6 @@
 @import "./utils/variables";
 
 //base = global style (margin, padding, fonts, etc...) and normalize.
-@import "./base/reset";
 @import "./base/typography";
 @import "./base/base";
 
@@ -16,11 +15,12 @@
 //components = re-usable elements smaller than layout (button, inputs, icons, etc...)
 @import "./components/buttons";
 @import "./components/inputs";
+@import "./components/images";
+@import "./components/tables";
 @import "./components/menu-burger";
 
 
-@import "./theme/halloween";
+@import "./theme/factions";
 @import "./vendors/bootstrap";
-@import "./pages/accueil";
+@import "./pages/datasheet";
 @import "./pages/simulateurDes";
-
