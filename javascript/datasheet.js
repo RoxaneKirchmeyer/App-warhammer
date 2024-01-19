@@ -34,7 +34,7 @@ function createHtmlElement(type, parent, className, id, contenu, event) {
 }
 
 function createDatasheet(factionName) {
-    fetch('rules.json')
+    fetch('/json/rules.json')
         .then(response => response.json())
         .then(data => {
 
@@ -79,7 +79,7 @@ function createDatasheet(factionName) {
 
                 // Img
 
-                createHtmlElement('img', header, "overlay", undefined, ".jpg", units)
+                createHtmlElement('img', header, "overlay", undefined, factionCombatPatrolUnits[units].img, units)
 
                 // section description
 
@@ -97,9 +97,9 @@ function createDatasheet(factionName) {
                 // Ranged WEAPONS
 
                 if (factionCombatPatrolUnits[units].weapons && factionCombatPatrolUnits[units].weapons.ranged) {
-                    const datasheetRangedWeaponsTable = createHtmlElement('table', datasheetOtherRules, "datasheet-ranged-weapons");
-                    const datasheetRangedWeaponsThead = createHtmlElement('thead', datasheetRangedWeaponsTable, "datasheet-ranged-weapons");
-                    const datasheetRangedWeaponsTheadTr = createHtmlElement('tr', datasheetRangedWeaponsThead, "datasheet-ranged-weapons");
+                    const datasheetRangedWeaponsTable = createHtmlElement('table', datasheetOtherRules, "datasheet-weapons");
+                    const datasheetRangedWeaponsThead = createHtmlElement('thead', datasheetRangedWeaponsTable);
+                    const datasheetRangedWeaponsTheadTr = createHtmlElement('tr', datasheetRangedWeaponsThead);
 
                     const rangedWeaponData = factionCombatPatrolUnits[units].weapons.ranged;
                     Object.keys(rangedWeaponData).forEach(weaponName => {
@@ -126,9 +126,9 @@ function createDatasheet(factionName) {
                 // Melee WEAPONS
 
                 if (factionCombatPatrolUnits[units].weapons && factionCombatPatrolUnits[units].weapons.melee) {
-                    const datasheetMeleeWeaponsTable = createHtmlElement('table', datasheetOtherRules, "datasheet-melee-weapons");
-                    const datasheetMeleeWeaponsThead = createHtmlElement('thead', datasheetMeleeWeaponsTable, "datasheet-melee-weapons");
-                    const datasheetMeleeWeaponsTheadTr = createHtmlElement('tr', datasheetMeleeWeaponsThead, "datasheet-melee-weapons");
+                    const datasheetMeleeWeaponsTable = createHtmlElement('table', datasheetOtherRules, "datasheet-weapons");
+                    const datasheetMeleeWeaponsThead = createHtmlElement('thead', datasheetMeleeWeaponsTable);
+                    const datasheetMeleeWeaponsTheadTr = createHtmlElement('tr', datasheetMeleeWeaponsThead);
 
                     const meleeWeaponData = factionCombatPatrolUnits[units].weapons.melee;
                     Object.keys(meleeWeaponData).forEach(weaponName => {
@@ -264,29 +264,24 @@ function createDatasheet(factionName) {
                 createHtmlElement('h3', datasheetKeywords, undefined, undefined, "MOTS-CLÉS:");
 
                 // Loop through each key in abilities
-                Object.entries(factionCombatPatrolUnits[units].kewords).forEach(([key, value]) => {
+                Object.entries(factionCombatPatrolUnits[units].keywords).forEach(([, value]) => {
                     // Create a new paragraph for each key
                     createHtmlElement('p', datasheetKeywords, undefined, undefined, value);
 
                 });
 
-                createHtmlElement('img', datasheetFooter, undefined, undefined, "footerLogo.jpg", "logo de l'armée: X")
+                createHtmlElement('img', datasheetFooter, undefined, undefined, factionData.img, `logo de l'armée ${factionName}`)
 
-                
+
                 let datasheetFactionKeywords = createHtmlElement('section', datasheetFooter, "datasheet-faction-keywords");
                 createHtmlElement('h3', datasheetFactionKeywords, undefined, undefined, "MOTS-CLÉS DE FACTION:");
 
-                // Loop through each key in abilities
-                Object.entries(factionCombatPatrolUnits[units].kewords).forEach(([key, value]) => {
-                    // Create a new paragraph for each key
-                    createHtmlElement('p', datasheetFactionKeywords, undefined, undefined, value);
-
-                });
+                createHtmlElement('p', datasheetFactionKeywords, undefined, undefined, factionCombatPatrolUnits[units].factions_keywords);
             });
         })
         .catch(error => console.error('Erreur lors de la récupération du fichier JSON :', error));
 }
 
 // Appeler la fonction createDatasheet pour générer la datasheet
-createDatasheet('empireTau');
+createDatasheet("Empire T'au");
 

@@ -2,19 +2,21 @@
     "core_rules": {
         "profiles-characteristics": {
             "move": "M",
-            "toughness": "T",
+            "toughness": "E",
             "save": "Sv",
-            "wounds": "W",
-            "leadership": "Ld",
-            "objective_control": "OC"
+            "wounds": "PV",
+            "leadership": "CD",
+            "objective_control": "CO"
         }
     },
     "factions": {
-        "empireTau": {
+        "Empire T'au": {
+            "img" : "img/patrols/Empire_T'au/Empire_T'au_logo.png",
             "factions_rules": {
                 "combat_patrol": {
                     "patrol_units": {
-                        "aun'shar": {
+                        "Aun'shar": {
+                            "img" : "img/patrols/Empire_T'au/Aun'Shar.png",
                             "stats": {
                                 "move": "6\"",
                                 "toughness": 3,
@@ -37,12 +39,12 @@
                                 },
                                 "melee" : {
                                     "sceptre" : {
-                                        "MELEE WEAPONS" : "sceptre honorifique",
-                                        "RANGE" : "Mêlée",
+                                        "ARMES DE MÊLÉE" : "sceptre honorifique",
+                                        "PORTÉE" : "Mêlée",
                                         "A" : 2,
-                                        "WS" : "4+",
-                                        "S" : 5,
-                                        "AP" : 0,
+                                        "CC" : "4+",
+                                        "F" : 5,
+                                        "PA" : 0,
                                         "D" : 1
                                     },
                                     "fauchard" : {
@@ -57,22 +59,79 @@
                                 }
                             },
                             "wargear_abilities" : {
-                                "Hover Drone" : "The bearer can Fly and has a Move characteristic of 10."
+                                "Drone Glisseur" : "Le porteur a le mot-clé [VOL] et a une caractéristique de Mouvement de 10\"."
                             },
                             "abilities" : {
-                                "Coordinated Leadership" : "In your Command phase, roll one D6: on a 4+, you gain 1CP."
+                                "Commandement Coordonné" : "À votre phase de Commandement, jetez 1 D6: sur 4+ vous gagnez 1PC."
                             },
+                            "keywords": [
+                                "INFANTERIE",
+                                "PERSONNAGE",
+                                "VOL",
+                                "ÉTHÉRÉ",
+                                "AUN'SHAR"
+                              ],
+                              "factions_keywords": "EMPIRE TAU",
                             "description": "Comme tous les Éthérés, Aun'Shar est serein et avisé, un chef spirituel qui incarne l'harmonie et la sagesse du Bien Suprême. En temps de guerre, il se rend en personne sur le champ de bataille, où il combat avec des armes rituelles, porté au-dessus du sol par un drone glisseur tout en invoquant la puissance élémentaire des castes du peuple t'au."
                         },
-                        "ghostkeel": {
+                        "EXO-ARMURE GHOSTKEEL": {
+                            "img" : "img/patrols/Empire_T'au/Exo_armure_Ghostkeel.png",
                             "stats": {
-                                "move": "2",
-                                "toughness": "2",
-                                "save": "2",
-                                "wounds": "2",
-                                "leadership": "2",
-                                "objective_control": "2"
-                            }
+                                "move": "6\"",
+                                "toughness": 3,
+                                "save": "5+",
+                                "wounds": 3,
+                                "leadership": "6+",
+                                "objective_control": 1
+                            },
+                            "weapons" : {
+                                "ranged" : {
+                                    "gun" : {
+                                        "RANGED WEAPONS" : "Fireblad pulse rifle",
+                                        "RANGE" : "24\"",
+                                        "A" : 2,
+                                        "BS" : "4+",
+                                        "S" : 5,
+                                        "PA" : 0,
+                                        "D" : 1
+                                    }
+                                },
+                                "melee" : {
+                                    "sceptre" : {
+                                        "ARMES DE MÊLÉE" : "sceptre honorifique",
+                                        "PORTÉE" : "Mêlée",
+                                        "A" : 2,
+                                        "CC" : "4+",
+                                        "F" : 5,
+                                        "PA" : 0,
+                                        "D" : 1
+                                    },
+                                    "fauchard" : {
+                                        "MELEE WEAPONS" : "fauchard",
+                                        "RANGE" : "Mêlée",
+                                        "A" : 2,
+                                        "WS" : "4+",
+                                        "S" : 5,
+                                        "AP" : 0,
+                                        "D" : 1
+                                    }
+                                }
+                            },
+                            "wargear_abilities" : {
+                                "Drone Glisseur" : "Le porteur a le mot-clé [VOL] et a une caractéristique de Mouvement de 10\"."
+                            },
+                            "abilities" : {
+                                "Commandement Coordonné" : "À votre phase de Commandement, jetez 1 D6: sur 4+ vous gagnez 1PC."
+                            },
+                            "keywords": [
+                                "INFANTERIE",
+                                "PERSONNAGE",
+                                "VOL",
+                                "ÉTHÉRÉ",
+                                "AUN'SHAR"
+                              ],
+                              "factions_keywords": "EMPIRE TAU",
+                            "description": "Comme tous les Éthérés, Aun'Shar est serein et avisé, un chef spirituel qui incarne l'harmonie et la sagesse du Bien Suprême. En temps de guerre, il se rend en personne sur le champ de bataille, où il combat avec des armes rituelles, porté au-dessus du sol par un drone glisseur tout en invoquant la puissance élémentaire des castes du peuple t'au."
                         }
                     }
                 }

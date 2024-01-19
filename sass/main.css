@@ -152,15 +152,15 @@ footer img {
   border: 3px solid #186071;
 }
 
-.datasheet-melee-weapons {
+.datasheet-weapons {
   border-collapse: collapse;
 }
-.datasheet-melee-weapons th,
-.datasheet-melee-weapons td {
+.datasheet-weapons th,
+.datasheet-weapons td {
   width: 20px;
   padding: 5px;
 }
-.datasheet-melee-weapons table {
+.datasheet-weapons table {
   border-collapse: collapse;
   text-align: center;
   width: 60%;
@@ -168,19 +168,19 @@ footer img {
   border-right: 2px solid #186071;
   border-left: 2px solid #186071;
 }
-.datasheet-melee-weapons thead {
+.datasheet-weapons thead {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   letter-spacing: 1.5px;
 }
-.datasheet-melee-weapons tbody {
+.datasheet-weapons tbody {
   font-family: "Barlow", sans-serif;
   background-color: #e6e9e2;
   font-size: 0.93rem;
   font-weight: 500;
 }
-.datasheet-melee-weapons tbody td {
+.datasheet-weapons tbody td {
   padding: 5px 0;
   border-bottom: 2px dotted black;
   text-align: center;
@@ -253,16 +253,16 @@ footer img {
   border-right: 2px solid #186071;
   height: 50vh;
 }
-.datasheet .datasheet-melee-weapons {
+.datasheet .datasheet-weapons {
   margin-top: 25px;
   background-color: #e6e9e2;
   width: 100%;
 }
-.datasheet .datasheet-melee-weapons th:nth-child(2) {
+.datasheet .datasheet-weapons th:nth-child(2) {
   width: 150px;
   text-align: left;
 }
-.datasheet .datasheet-melee-weapons tbody td:nth-child(2) {
+.datasheet .datasheet-weapons tbody td:nth-child(2) {
   text-align: left;
 }
 .datasheet .datasheet-abilities {
