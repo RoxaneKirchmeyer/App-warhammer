@@ -4,27 +4,27 @@ form {
     align-items: center;
     padding: 20px;
     margin-top: 30px;
-}
 
-select {
-    width: 350px;
-}
+    select {
+        width: 350px;
+    }
 
-select,
-button {
-    font-family: $fontText;
-    font-size: 1.5em;
-    border: 1px solid #345163;
-    color: #345163;
-    background-color: #EAEBED;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 15px;
-}
+    select,
+    button {
+        font-family: $fontText;
+        font-size: 1.5em;
+        border: 1px solid #345163;
+        color: #345163;
+        background-color: #EAEBED;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 15px;
+    }
 
-button {
-    letter-spacing: 3px;
-    width: 50%;
-    margin-top: 100px;
-    cursor: pointer;
+    button {
+        letter-spacing: 3px;
+        width: 50%;
+        margin-top: 100px;
+        cursor: pointer;
+    }
 }
