@@ -42,7 +42,7 @@ main {
   height: 30vh;
 }
 
-h2,
+h2, h3,
 p {
   font-weight: bold;
 }
@@ -51,7 +51,7 @@ span {
   font-weight: bold;
 }
 
-.datasheet-description h3 {
+.datasheet-description h4 {
   background-color: #6f0c0f;
   font-family: "Barlow", sans-serif;
   color: #ffffff;
@@ -71,7 +71,7 @@ span {
   padding: 0 10px;
 }
 
-.datasheet-wargear-abilities h3 {
+.datasheet-wargear-abilities h4 {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -88,7 +88,7 @@ span {
   padding-left: 80px;
 }
 
-.datasheet-abilities h3 {
+.datasheet-abilities h4 {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -306,7 +306,7 @@ footer img {
   padding-bottom: 10px;
   border-bottom-right-radius: 100px;
 }
-.datasheet header .datasheet-profiles h2 {
+.datasheet header .datasheet-profiles h3 {
   background-color: #186071;
 }
 .datasheet header .datasheet-profiles .profile-header {
@@ -347,7 +347,7 @@ footer img {
   border-bottom: 2px solid #186071;
   width: 29.65%;
 }
-.datasheet .datasheet-abilities h3,
+.datasheet .datasheet-abilities h4,
 .datasheet .datasheet-abilities p {
   margin: 25px 25px 0px 25px;
 }
@@ -366,7 +366,7 @@ footer img {
   border-right: 2px solid #186071;
   border-bottom: 2px solid #186071;
 }
-.datasheet footer .datasheet-keywords h3 {
+.datasheet footer .datasheet-keywords h4 {
   padding: 10px;
   padding-left: 40px;
   margin: 0 0 0 25px;
@@ -389,7 +389,7 @@ footer img {
   border-right: 2px solid #186071;
   border-bottom: 2px solid #186071;
 }
-.datasheet footer .datasheet-faction-keywords h3 {
+.datasheet footer .datasheet-faction-keywords h4 {
   padding: 10px;
   padding-left: 40px;
   margin: 0 0 0 25px;

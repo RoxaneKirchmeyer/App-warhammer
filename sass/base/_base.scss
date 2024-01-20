@@ -17,7 +17,7 @@ main {
     height: 30vh;
 }
 
-h2,
+h2, h3,
 p {
     font-weight: $fontBold;
 }
@@ -27,7 +27,7 @@ span {
 }
 
 .datasheet-description {
-    h3 {
+    h4 {
         background-color: $redBgrPatrol;
         font-family: $fontSubtitle;
         color: $whiteTitle;
@@ -50,7 +50,7 @@ span {
 }
 
 .datasheet-wargear-abilities {
-    h3 {
+    h4 {
         color: $whiteTitle;
         font-family: $fontTitle;
         font-size: 16px;
@@ -70,7 +70,7 @@ span {
 }
 
 .datasheet-abilities {
-    h3 {
+    h4 {
         color: $whiteTitle;
         font-family: $fontTitle;
         font-size: 16px;
