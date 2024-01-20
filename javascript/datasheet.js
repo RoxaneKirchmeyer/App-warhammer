@@ -1,5 +1,6 @@
 let jsonData;
 let armySelector = document.querySelector("#armySelector");
+let datasheetsFactionContainer;
 
 // Charger le fichier JSON et appeler la fonction avec les données
 fetch('/json/rules.json')
@@ -27,7 +28,7 @@ function createHtmlElement(type, parent, className, id, contenu, attribute, even
         htmlElement.value = attribute
     }
     // Permet d'ajouter du contenu à cet élément HTML en fonction du paramètre contenu
-    // Si on a créé un élément HTML de type p ou h2 : on change le contenu de la balise en fonction du paramètre contenu
+    // Si on a créé un élément HTML de type p ou h3 : on change le contenu de la balise en fonction du paramètre contenu
 
     // Si on a créé un élément HTML de type img : on ajoute une source d'image en fonction du paramètre contenu
     if (type === 'img') {
@@ -53,6 +54,11 @@ function createHtmlElement(type, parent, className, id, contenu, attribute, even
 
 function createDatasheet(factionName) {
 
+    if (datasheetsFactionContainer) {
+        datasheetsFactionContainer.remove();
+    }
+
+    datasheetsFactionContainer = createHtmlElement('article', document.body, "datasheets-faction-container");
 
     let factionData = jsonData.factions[factionName];
 
@@ -63,15 +69,14 @@ function createDatasheet(factionName) {
 
     let factionCombatPatrolUnits = factionData.factions_rules.combat_patrol.patrol_units;
 
-
-
-
     Object.keys(factionCombatPatrolUnits).forEach(units => {
+
+        createHtmlElement('h2', datasheetsFactionContainer, undefined, undefined, `${factionName}`.toUpperCase())
         // Article
-        const datasheetArticle = createHtmlElement('article', armySelector, "datasheet");
+        const datasheetArticle = createHtmlElement('article', datasheetsFactionContainer, "datasheet");
         // Header
         const header = createHtmlElement('header', datasheetArticle);
-        createHtmlElement('h2', header, "datasheet-name", undefined, units.toUpperCase());
+        createHtmlElement('h3', header, "datasheet-name", undefined, units.toUpperCase());
         // Table
         const datasheetProfilesTable = createHtmlElement('table', header, 'datasheet-profiles');
         // Thead
@@ -101,7 +106,7 @@ function createDatasheet(factionName) {
         // section description
 
         const DatasheetDescription = createHtmlElement('section', header, "datasheet-description")
-        createHtmlElement('h3', DatasheetDescription, undefined, undefined, "Fiche Technique de Patrouille")
+        createHtmlElement('h4', DatasheetDescription, undefined, undefined, "Fiche Technique de Patrouille")
 
         const combatPatrolUnitsDescription = factionCombatPatrolUnits[units].description;
         createHtmlElement('p', DatasheetDescription, undefined, undefined, combatPatrolUnitsDescription)
@@ -172,7 +177,7 @@ function createDatasheet(factionName) {
         // Wargear abilities
         if (factionCombatPatrolUnits[units].wargear_abilities) {
             let datasheetWargearAbilities = createHtmlElement('section', datasheetOtherRules, "datasheet-wargear-abilities");
-            createHtmlElement('h3', datasheetWargearAbilities, factionName.replace(/\s+/g, '-').replace(/'/g, ''), undefined, "APTITUDES D'ÉQUIPEMENT");
+            createHtmlElement('h4', datasheetWargearAbilities, factionName.replace(/\s+/g, '-').replace(/'/g, ''), undefined, "APTITUDES D'ÉQUIPEMENT");
 
             // Loop through each key in wargear_abilities
             Object.entries(factionCombatPatrolUnits[units].wargear_abilities).forEach(([key, value]) => {
@@ -190,7 +195,7 @@ function createDatasheet(factionName) {
         // LEADER
         if (factionCombatPatrolUnits[units].leader) {
             let datasheetLeader = createHtmlElement('section', datasheetOtherRules, "datasheet-leader");
-            createHtmlElement('h3', datasheetLeader, factionName.replace(/\s+/g, '-').replace(/'/g, ''), undefined, "MENEUR");
+            createHtmlElement('h4', datasheetLeader, factionName.replace(/\s+/g, '-').replace(/'/g, ''), undefined, "MENEUR");
 
             // Split the leader value into parts based on ':'
             let leaderParts = factionCombatPatrolUnits[units].leader.split(':');
@@ -208,7 +213,7 @@ function createDatasheet(factionName) {
         // TRANSPORT
         if (factionCombatPatrolUnits[units].transport) {
             let datasheetTransport = createHtmlElement('section', datasheetOtherRules, "datasheet-leader");
-            createHtmlElement('h3', datasheetTransport, factionName.replace(/\s+/g, '-').replace(/'/g, ''), undefined, "TRANSPORT");
+            createHtmlElement('h4', datasheetTransport, factionName.replace(/\s+/g, '-').replace(/'/g, ''), undefined, "TRANSPORT");
 
             let datasheetTransportParagraph = createHtmlElement('p', datasheetTransport);
 
@@ -220,7 +225,7 @@ function createDatasheet(factionName) {
         // PATROL SQUAD
         if (factionCombatPatrolUnits[units].patrolSquad) {
             let datasheetPatrolSquad = createHtmlElement('section', datasheetOtherRules, "datasheet-patrol-squad");
-            createHtmlElement('h3', datasheetPatrolSquad, factionName.replace(/\s+/g, '-').replace(/'/g, ''), undefined, "ESCOUADES DE PATROUILLE");
+            createHtmlElement('h4', datasheetPatrolSquad, factionName.replace(/\s+/g, '-').replace(/'/g, ''), undefined, "ESCOUADES DE PATROUILLE");
 
             let datasheetPatrolSquadParagraph = createHtmlElement('p', datasheetPatrolSquad);
 
@@ -232,7 +237,7 @@ function createDatasheet(factionName) {
         // DAMAGED
         if (factionCombatPatrolUnits[units].damaged) {
             let datasheetDamaged = createHtmlElement('section', datasheetOtherRules, "datasheet-damaged");
-            createHtmlElement('h3', datasheetDamaged, factionName.replace(/\s+/g, '-').replace(/'/g, ''), undefined, "ENDOMMAGÉ : 1-4 PV RESTANTS");
+            createHtmlElement('h4', datasheetDamaged, factionName.replace(/\s+/g, '-').replace(/'/g, ''), undefined, "ENDOMMAGÉ : 1-4 PV RESTANTS");
 
             let datasheetDamagedParagraph = createHtmlElement('p', datasheetDamaged);
 
@@ -244,7 +249,7 @@ function createDatasheet(factionName) {
 
         if (factionCombatPatrolUnits[units].abilities) {
             let datasheetAbilities = createHtmlElement('section', datasheetArticle, "datasheet-abilities");
-            createHtmlElement('h3', datasheetAbilities, factionName.replace(/\s+/g, '-').replace(/'/g, ''), undefined, "APTITUDES");
+            createHtmlElement('h4', datasheetAbilities, factionName.replace(/\s+/g, '-').replace(/'/g, ''), undefined, "APTITUDES");
 
             // Loop through each key in abilities
             Object.entries(factionCombatPatrolUnits[units].abilities).forEach(([key, value]) => {
@@ -263,13 +268,13 @@ function createDatasheet(factionName) {
         let datasheetFooter = createHtmlElement('footer', datasheetArticle);
 
         let datasheetKeywords = createHtmlElement('section', datasheetFooter, "datasheet-keywords");
-        createHtmlElement('h3', datasheetKeywords, undefined, undefined, "MOTS-CLÉS:");
+        createHtmlElement('h4', datasheetKeywords, undefined, undefined, "MOTS-CLÉS:");
         createHtmlElement('p', datasheetKeywords, undefined, undefined, factionCombatPatrolUnits[units].keywords);
 
         createHtmlElement('img', datasheetFooter, undefined, undefined, factionData.img, `logo de l'armée ${factionName}`)
 
         let datasheetFactionKeywords = createHtmlElement('section', datasheetFooter, "datasheet-faction-keywords");
-        createHtmlElement('h3', datasheetFactionKeywords, undefined, undefined, "MOTS-CLÉS DE FACTION:");
+        createHtmlElement('h4', datasheetFactionKeywords, undefined, undefined, "MOTS-CLÉS DE FACTION:");
         createHtmlElement('p', datasheetFactionKeywords, undefined, undefined, factionCombatPatrolUnits[units].factions_keywords);
 
     })
@@ -294,5 +299,11 @@ function createArmySelector(jsonData) {
         let selectedFaction = armySelectorFormSelect.value;
         // Appeler la fonction avec la faction sélectionnée
         createDatasheet(selectedFaction);
+
+        datasheetsFactionContainer.scrollIntoView({ behavior: 'smooth' });
     });
 }
+
+
+
+
