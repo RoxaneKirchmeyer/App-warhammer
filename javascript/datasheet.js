@@ -1,5 +1,6 @@
 let jsonData;
 let armySelector = document.querySelector("#armySelector");
+let datasheetsContainer;
 
 // Charger le fichier JSON et appeler la fonction avec les données
 fetch('/json/rules.json')
@@ -53,6 +54,11 @@ function createHtmlElement(type, parent, className, id, contenu, attribute, even
 
 function createDatasheet(factionName) {
 
+    if (datasheetsContainer) {
+        datasheetsContainer.remove();
+    }
+
+    datasheetsContainer = createHtmlElement('div', armySelector, "datasheets-container");
 
     let factionData = jsonData.factions[factionName];
 
@@ -68,7 +74,7 @@ function createDatasheet(factionName) {
 
     Object.keys(factionCombatPatrolUnits).forEach(units => {
         // Article
-        const datasheetArticle = createHtmlElement('article', armySelector, "datasheet");
+        const datasheetArticle = createHtmlElement('article', datasheetsContainer, "datasheet");
         // Header
         const header = createHtmlElement('header', datasheetArticle);
         createHtmlElement('h2', header, "datasheet-name", undefined, units.toUpperCase());
@@ -296,3 +302,7 @@ function createArmySelector(jsonData) {
         createDatasheet(selectedFaction);
     });
 }
+
+
+
+
