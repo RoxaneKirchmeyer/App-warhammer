@@ -3,128 +3,13 @@
         "profiles-characteristics": {
             "move": "M",
             "toughness": "E",
-            "save": "Sv",
+            "save": "SV",
             "wounds": "PV",
             "leadership": "CD",
             "objective_control": "CO"
         }
     },
     "factions": {
-        "Empire T'au": {
-            "img": "img/patrols/Empire_T'au/Empire_T'au_logo.png",
-            "factions_rules": {
-                "combat_patrol": {
-                    "patrol_units": {
-                        "Aun'shar": {
-                            "img": "img/patrols/Empire_T'au/Aun'Shar.png",
-                            "stats": {
-                                "move": "6\"",
-                                "toughness": 3,
-                                "save": "5+",
-                                "wounds": 3,
-                                "leadership": "6+",
-                                "objective_control": 1
-                            },
-                            "weapons": {
-                                "ranged": {
-                                    "gun": {
-                                        "RANGED WEAPONS": "Fireblad pulse rifle",
-                                        "RANGE": "24\"",
-                                        "A": 2,
-                                        "BS": "4+",
-                                        "S": 5,
-                                        "PA": 0,
-                                        "D": 1
-                                    }
-                                },
-                                "melee": {
-                                    "sceptre": {
-                                        "ARMES DE MÊLÉE": "sceptre honorifique",
-                                        "PORTÉE": "Mêlée",
-                                        "A": 2,
-                                        "CC": "4+",
-                                        "F": 5,
-                                        "PA": 0,
-                                        "D": 1
-                                    },
-                                    "fauchard": {
-                                        "MELEE WEAPONS": "fauchard",
-                                        "RANGE": "Mêlée",
-                                        "A": 2,
-                                        "WS": "4+",
-                                        "S": 5,
-                                        "AP": 0,
-                                        "D": 1
-                                    }
-                                }
-                            },
-                            "wargear_abilities": {
-                                "Drone Glisseur": "Le porteur a le mot-clé [VOL] et a une caractéristique de Mouvement de 10\"."
-                            },
-                            "abilities": {
-                                "Commandement Coordonné": "À votre phase de Commandement, jetez 1 D6: sur 4+ vous gagnez 1PC."
-                            },
-                            "keywords": "INFANTERIE, PERSONNAGE, VOL, ÉTHÉRÉ, AUN'SHAR",
-                            "factions_keywords": "EMPIRE TAU",
-                            "description": "Comme tous les Éthérés, Aun'Shar est serein et avisé, un chef spirituel qui incarne l'harmonie et la sagesse du Bien Suprême. En temps de guerre, il se rend en personne sur le champ de bataille, où il combat avec des armes rituelles, porté au-dessus du sol par un drone glisseur tout en invoquant la puissance élémentaire des castes du peuple t'au."
-                        },
-                        "EXO-ARMURE GHOSTKEEL": {
-                            "img": "img/patrols/Empire_T'au/Exo_armure_Ghostkeel2.png",
-                            "stats": {
-                                "move": "6\"",
-                                "toughness": 3,
-                                "save": "5+",
-                                "wounds": 3,
-                                "leadership": "6+",
-                                "objective_control": 1
-                            },
-                            "weapons": {
-                                "ranged": {
-                                    "gun": {
-                                        "RANGED WEAPONS": "Fireblad pulse rifle",
-                                        "RANGE": "24\"",
-                                        "A": 2,
-                                        "BS": "4+",
-                                        "S": 5,
-                                        "PA": 0,
-                                        "D": 1
-                                    }
-                                },
-                                "melee": {
-                                    "sceptre": {
-                                        "ARMES DE MÊLÉE": "sceptre honorifique",
-                                        "PORTÉE": "Mêlée",
-                                        "A": 2,
-                                        "CC": "4+",
-                                        "F": 5,
-                                        "PA": 0,
-                                        "D": 1
-                                    },
-                                    "fauchard": {
-                                        "MELEE WEAPONS": "fauchard",
-                                        "RANGE": "Mêlée",
-                                        "A": 2,
-                                        "WS": "4+",
-                                        "S": 5,
-                                        "AP": 0,
-                                        "D": 1
-                                    }
-                                }
-                            },
-                            "wargear_abilities": {
-                                "Drone Glisseur": "Le porteur a le mot-clé [VOL] et a une caractéristique de Mouvement de 10\"."
-                            },
-                            "abilities": {
-                                "Commandement Coordonné": "À votre phase de Commandement, jetez 1 D6: sur 4+ vous gagnez 1PC."
-                            },
-                            "keywords": "INFANTERIE, PERSONNAGE, VOL, ÉTHÉRÉ, AUN'SHAR",
-                            "factions_keywords": "EMPIRE TAU",
-                            "description": "Comme tous les Éthérés, Aun'Shar est serein et avisé, un chef spirituel qui incarne l'harmonie et la sagesse du Bien Suprême. En temps de guerre, il se rend en personne sur le champ de bataille, où il combat avec des armes rituelles, porté au-dessus du sol par un drone glisseur tout en invoquant la puissance élémentaire des castes du peuple t'au."
-                        }
-                    }
-                }
-            }
-        },
         "Adepta Sororitas": {
             "img": "img/patrols/Adepta_Sororitas/Adepta_Sororitas_logo.png",
             "factions_rules": {
@@ -174,11 +59,11 @@
                                     }
                                 }
                             },
-                            "leader" : "Cette figurine peut être attachée à l'unité suivante : ESCOUADE DE SŒURS DE BATAILLE",
+                            "leader": "Cette figurine peut être attachée à l'unité suivante : ESCOUADE DE SŒURS DE BATAILLE",
                             "abilities": {
                                 "BASE": "Meneur",
-                                "FACTION" : "Actes de Foi",
-                                "Guider les justes" : "Tant que cette figurine mène une unité, à chaque attaque d'une figurine de l'unité, vous pouvez relancer le jet de Touche."
+                                "FACTION": "Actes de Foi",
+                                "Guider les justes": "Tant que cette figurine mène une unité, à chaque attaque d'une figurine de l'unité, vous pouvez relancer le jet de Touche."
                             },
                             "keywords": "INFANTERIE, PERSONNAGE, IMPERIUM, CHANOINESSE, ELLYRINE",
                             "factions_keywords": "ADEPTA SORORITAS"
@@ -254,9 +139,9 @@
                                     }
                                 }
                             },
-                            "patrolSquad" : "Avant la bataille, au début de l'étape Déclarer les Formations de Bataille, cette unité peut être scindée en deux unités, chacune comportant cinq figurines. En ce cas, une de ces unités doit contenir la figurine équipée du lance-flammes Ministorum et l'autre unité doit contenir la figurine équipée du bolter Storm d'artificier",
+                            "patrolSquad": "Avant la bataille, au début de l'étape Déclarer les Formations de Bataille, cette unité peut être scindée en deux unités, chacune comportant cinq figurines. En ce cas, une de ces unités doit contenir la figurine équipée du lance-flammes Ministorum et l'autre unité doit contenir la figurine équipée du bolter Storm d'artificier",
                             "abilities": {
-                                "FACTION" : "Actes de Foi"
+                                "FACTION": "Actes de Foi"
                             },
                             "keywords": "INFANTERIE, LIGNE, IMPERIUM, CHANOINESSE, ESCOUADE DE SŒURS DE BATAILLE",
                             "factions_keywords": "ADEPTA SORORITAS"
@@ -324,9 +209,9 @@
                                 }
                             },
                             "abilities": {
-                                "BASE" : "Frappe en Profondeur",
-                                "FACTION" : "Actes de Foi",
-                                "Ascension Angélique" : "À votre phase de Tir, après que cette unité a tiré, si elle n'est à Portée d'Engagement d'aucune unité ennemie, elle peut faire un mouvement Normal de jusqu'à 6\". En ce cas, jusqu'à la fin du tour, cette unité n'est pas éligible pour déclarer une charge."
+                                "BASE": "Frappe en Profondeur",
+                                "FACTION": "Actes de Foi",
+                                "Ascension Angélique": "À votre phase de Tir, après que cette unité a tiré, si elle n'est à Portée d'Engagement d'aucune unité ennemie, elle peut faire un mouvement Normal de jusqu'à 6\". En ce cas, jusqu'à la fin du tour, cette unité n'est pas éligible pour déclarer une charge."
                             },
                             "keywords": "INFANTERIE, RÉACTEUR DORSAL, VOL, IMPERIUM, ESCOUADE SÉRAPHINE",
                             "factions_keywords": "ADEPTA SORORITAS"
@@ -376,9 +261,9 @@
                                 }
                             },
                             "abilities": {
-                                "BASE" : "Insensible à la Douleur 5+",
-                                "FACTION" : "Actes de Foi",
-                                "Supervision de la Rédemption" : "Tant que cette unité contient une Repentia Supérieure, à chaque attaque de mêlée d'une figurine de cette unité, vous pouvez relancer le jet de Touche et, si cette unité a fait un mouvement de Charge à ce tour, vous pouvez également relancer le jet de Blessure."
+                                "BASE": "Insensible à la Douleur 5+",
+                                "FACTION": "Actes de Foi",
+                                "Supervision de la Rédemption": "Tant que cette unité contient une Repentia Supérieure, à chaque attaque de mêlée d'une figurine de cette unité, vous pouvez relancer le jet de Touche et, si cette unité a fait un mouvement de Charge à ce tour, vous pouvez également relancer le jet de Blessure."
                             },
                             "keywords": "INFANTERIE, IMPERIUM, ESCOUADE REPENTIA",
                             "factions_keywords": "ADEPTA SORORITAS"
@@ -408,8 +293,8 @@
                                 }
                             },
                             "abilities": {
-                                "BASE" : "Insensible à la Douleur 4+",
-                                "FACTION" : "Actes de Foi"
+                                "BASE": "Insensible à la Douleur 4+",
+                                "FACTION": "Actes de Foi"
                             },
                             "keywords": "INFANTERIE, IMPERIUM, ARCO-FLAGELLANTS",
                             "factions_keywords": "ADEPTA SORORITAS"
@@ -450,9 +335,9 @@
                                 }
                             },
                             "abilities": {
-                                "BASE" : "Destruction Néfaste 1, Insensible à la Douleur 5+",
-                                "FACTION" : "Actes de Foi",
-                                "Souffrance Sans Fin" : "Cette unité est éligible pour déclarer une charge à un tour où elle a Avancé."
+                                "BASE": "Destruction Néfaste 1, Insensible à la Douleur 5+",
+                                "FACTION": "Actes de Foi",
+                                "Souffrance Sans Fin": "Cette unité est éligible pour déclarer une charge à un tour où elle a Avancé."
                             },
                             "keywords": "VÉHICULE, MARCHEUR, IMPERIUM, MACHINE DE PÉNITENCE",
                             "factions_keywords": "ADEPTA SORORITAS"
@@ -492,13 +377,1117 @@
                                     }
                                 }
                             },
-                            "transport" : "Cette figurine a une capacité de transport de 12 figurines Infanterie Adepta Sororitas. Elle ne peut pas transporter de figurines Réacteur Dorsal.",
+                            "transport": "Cette figurine a une capacité de transport de 12 figurines Infanterie Adepta Sororitas. Elle ne peut pas transporter de figurines Réacteur Dorsal.",
                             "abilities": {
-                                "BASE" : "Destruction Néfaste D3, Pont de Tir 2",
-                                "FACTION" : "Actes de Foi"
+                                "BASE": "Destruction Néfaste D3, Pont de Tir 2",
+                                "FACTION": "Actes de Foi"
                             },
                             "keywords": "VÉHICULE, TRANSPORT, TRANSPORT ASSIGNÉ, FUMÉE, IMPERIUM, RHINO SORORITAS",
                             "factions_keywords": "ADEPTA SORORITAS"
+                        }
+                    }
+                }
+            }
+        },
+        "Empire T'au": {
+            "img": "img/patrols/Empire_T'au/Empire_T'au_logo.png",
+            "factions_rules": {
+                "combat_patrol": {
+                    "patrol_units": {
+                        "Aun'shar": {
+                            "img": "img/patrols/Empire_T'au/Aun'Shar.png",
+                            "stats": {
+                                "move": "6\"",
+                                "toughness": 3,
+                                "save": "5+",
+                                "wounds": 3,
+                                "leadership": "6+",
+                                "objective_control": 1
+                            },
+                            "description": "Comme tous les Éthérés, Aun'Shar est serein et avisé, un chef spirituel qui incarne l'harmonie et la sagesse du Bien Suprême. En temps de guerre, il se rend en personne sur le champ de bataille, où il combat avec des armes rituelles, porté au-dessus du sol par un drone glisseur tout en invoquant la puissance élémentaire des castes du peuple t'au.",
+                            "weapons": {
+                                "melee": {
+                                    "Sceptre honorifique": {
+                                        "ARMES DE MÊLÉE": "Sceptre honorifique",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 2,
+                                        "CC": "4+",
+                                        "F": 5,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                }
+                            },
+                            "wargear_abilities": {
+                                "Drone Glisseur": "Le porteur a le mot-clé [VOL] et a une caractéristique de Mouvement de 10\"."
+                            },
+                            "abilities": {
+                                "Commandement Coordonné": "À votre phase de Commandement, jetez 1 D6: sur 4+ vous gagnez 1PC."
+                            },
+                            "keywords": "INFANTERIE, PERSONNAGE, VOL, ÉTHÉRÉ, AUN'SHAR",
+                            "factions_keywords": "EMPIRE T'AU"
+                        },
+                        "SHAS'NEL D'TANO": {
+                            "img": "img/patrols/Empire_T'au/Shas'nel_D'Tano.png",
+                            "stats": {
+                                "move": "6\"",
+                                "toughness": 3,
+                                "save": "4+",
+                                "wounds": 3,
+                                "leadership": "7+",
+                                "objective_control": 1
+                            },
+                            "description": "Spécialistes des tactiques s'appuyant sur l'infanterie, les Sabres de Feu renoncent à l'honneur de revêtir une exo-armure, afin de lutter parmi les soldats du rang avec une totale abnégation. Leur sagesse de vétéran bénéficie grandement aux guerriers aux côtés desquels ils se battent, optimisant la férocité et la précision de leur puissance de feu.",
+                            "weapons": {
+                                "ranged": {
+                                    "Fusil à impulsions de Sabre de Feu": {
+                                        "ARMES DE TIR": "Fusil à impulsions de Sabre de Feu [TIR RAPIDE 1]",
+                                        "PORTÉE": "30\"",
+                                        "A": 1,
+                                        "CT": "3+",
+                                        "F": 5,
+                                        "PA": 0,
+                                        "D": 2
+                                    }
+                                },
+                                "melee": {
+                                    "Arme de corps à corps": {
+                                        "ARMES DE MÊLÉE": "Arme de corps à corps",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 3,
+                                        "CC": "4+",
+                                        "F": 3,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                }
+                            },
+                            "leader": "Cette figurine peut être attachée à l'unité suivante : Équipe d'Attaque",
+                            "abilities": {
+                                "BASE": "Meneur",
+                                "FACTION": "Pour le Bien Suprême",
+                                "Feu Redoublé": "Tant que cette figurine mène une unité, ajoutez 1 à la caractéristique d'Attaques des armes de tir dont les figurines de l'unité sont équipées."
+                            },
+                            "keywords": "INFANTERIE, PERSONNAGE, SABRE DE FEU, SHAS'NEL D'TANO",
+                            "factions_keywords": "EMPIRE T'AU"
+                        },
+                        "ÉQUIPE D'ATTAQUE": {
+                            "img": "img/patrols/Empire_T'au/Équipe_d'attaque.png",
+                            "stats": {
+                                "move": "6\"",
+                                "toughness": 3,
+                                "save": "4+",
+                                "wounds": 1,
+                                "leadership": "7+",
+                                "objective_control": 2
+                            },
+                            "description": "Les Équipes d'Attaque de Guerriers de Feu sont l'épine dorsale de nombre de Cadres de Chasse, au sein desquels elles déchaînent une puissance de feu antipersonnel à laquelle peu d'ennemis peuvent résister. Robustes, fiables, nombreuses et ayant accès à des armes spécialisées et des drones d'appui, ces unités tiennent la ligne quelle que puisse être l'adversité.",
+                            "weapons": {
+                                "ranged": {
+                                    "Carabine à impulsions": {
+                                        "ARMES DE TIR": "Carabine à impulsions",
+                                        "PORTÉE": "20\"",
+                                        "A": 2,
+                                        "CT": "4+",
+                                        "F": 5,
+                                        "PA": 0,
+                                        "D": 1
+                                    },
+                                    "Pistolet à impulsions": {
+                                        "ARMES DE TIR": "Pistolet à impulsions [PISTOLET]",
+                                        "PORTÉE": "12\"",
+                                        "A": 1,
+                                        "CT": "4+",
+                                        "F": 5,
+                                        "PA": 0,
+                                        "D": 1
+                                    },
+                                    "Fusil à impulsions": {
+                                        "ARMES DE TIR": "Fusil à impulsions [TIR RAPIDE 1]",
+                                        "PORTÉE": "30\"",
+                                        "A": 1,
+                                        "CT": "4+",
+                                        "F": 5,
+                                        "PA": 0,
+                                        "D": 1
+                                    },
+                                    "Système de missiles de tourelle d'appui": {
+                                        "ARMES DE TIR": "Système de missiles de tourelle d'appui [TIR INDIRECT, JUMELÉ]",
+                                        "PORTÉE": "30\"",
+                                        "A": 2,
+                                        "CT": "5+",
+                                        "F": 5,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                },
+                                "melee": {
+                                    "Arme de corps à corps": {
+                                        "ARMES DE MÊLÉE": "Arme de corps à corps",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 1,
+                                        "CC": "5+",
+                                        "F": 3,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                }
+                            },
+                            "abilities": {
+                                "FACTION": "Pour le Bien Suprême",
+                                "Tir de Couverture": "Tant que cette unité est à portée d'un pion d'objectif que vous contrôlez, chaque fois que vous la choisissez comme cible du Stratagème Tir en État d'Alerte, les touches sont causées sur des jets de Touche non modifiés de 4+ en résolvant ce Stratagème.",
+                                "Tourelle d'Appui DS8": "À votre phase de Mouvement, si cette unité Reste Immobile, jusqu'au début de votre prochaine phase de Mouvement, sa figurine de Shas'ui Guerrier de Feu est équipée de l'arme système de missiles de tourelle d'appui.",
+                                "Note des Concepteurs": "Placez un pion de Tourelle d'Appui DS8 à côté de cette unité en guise de rappel. Ceci ne compte pas comme une figurine au regard des règles."
+                            },
+                            "keywords": "INFANTERIE, LIGNE, DÉSIGNATEUR LASER, GUERRIER DE FEU, ÉQUIPE D'ATTAQUE",
+                            "factions_keywords": "EMPIRE T'AU"
+                        },
+                        "EXO-ARMURES STEALTH": {
+                            "img": "img/patrols/Empire_T'au/Exo_armure_Stealth.png",
+                            "stats": {
+                                "move": "8\"",
+                                "toughness": 4,
+                                "save": "3+",
+                                "wounds": 2,
+                                "leadership": "7+",
+                                "objective_control": 1
+                            },
+                            "description": "Type d'exo-armure comparativement plus léger et spécialisé, la XV25 dissimule son pilote derrière un champ furtif qui altère vision et capteurs. Bénéficiant de répulseurs et d'une impressionnante puissance de feu, ces équipes font d'excellents agents avancés.",
+                            "weapons": {
+                                "ranged": {
+                                    "Canon à induction": {
+                                        "ARMES DE TIR": "Canon à induction",
+                                        "PORTÉE": "18\"",
+                                        "A": 4,
+                                        "CT": "4+",
+                                        "F": 5,
+                                        "PA": 0,
+                                        "D": 1
+                                    },
+                                    "Éclateur à fusion": {
+                                        "ARMES DE TIR": "Éclateur à fusion [FUSION 2]",
+                                        "PORTÉE": "12\"",
+                                        "A": 1,
+                                        "CT": "4+",
+                                        "F": 9,
+                                        "PA": -4,
+                                        "D": "D6"
+                                    }
+                                },
+                                "melee": {
+                                    "Poings d'exo-armure": {
+                                        "ARMES DE MÊLÉE": "Poings d'exo-armure",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 2,
+                                        "CC": "5+",
+                                        "F": 4,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                }
+                            },
+                            "wargear_abilities": {
+                                "Drone de Marquage": "L'unité du porteur a le mot-clé [DÉSIGNATEUR LASER] et peut faire office d'unité Observatrice pour n'importe quelle autre unité même si elle a Avancé à ce tour.",
+                                "Note des Concepteurs": "Placez un pion de Drone de Marquage à côté de cette unité en guise de rappel. Ceci ne compte pas comme une figurine au regard des règles."
+                            },
+                            "abilities": {
+                                "BASE": "Infiltrateurs, Discrétion",
+                                "FACTION": "Pour le Bien Suprême",
+                                "Observateurs d'Avant-garde": ": Chaque fois que cette unité est une unité Observatrice, jusqu'à la fin de la phase, à chaque attaque de tir d'une figurine de son unité Guidée ciblant son unité Pointée, relancez tout jet de Blessure de 1."
+                            },
+                            "keywords": "INFANTERIE, VOL, EXO-ARMURE, STEALTH",
+                            "factions_keywords": "EMPIRE T'AU"
+                        },
+                        "EXO-ARMURES GHOSTKEEL": {
+                            "img": "img/patrols/Empire_T'au/Exo_armure_Ghostkeel.png",
+                            "stats": {
+                                "move": "10\"",
+                                "toughness": 8,
+                                "save": "2+",
+                                "wounds": 12,
+                                "leadership": "7+",
+                                "objective_control": 3
+                            },
+                            "description": "Rien d'aussi imposant ne devait pouvoir se glisser sur le champ de bataille sans être repéré, mais entre son champ furtif et son brouillage actif, lExo-armure Ghostkeel en est capable. Une fois en position, son pilote déchaîne ses armes, piégeant, submergeant et dispersant l'ennemi terrifié en quelques secondes.",
+                            "weapons": {
+                                "ranged": {
+                                    "Cyclo-araseur à ions - standard": {
+                                        "ARMES DE TIR": "Cyclo-araseur à ions - standard",
+                                        "PORTÉE": "36\"",
+                                        "A": 6,
+                                        "CT": "4+",
+                                        "F": 7,
+                                        "PA": -1,
+                                        "D": 2
+                                    },
+                                    "Cyclo-araseur à ions - surcharge": {
+                                        "ARMES DE TIR": "Cyclo-araseur à ions - surcharge [À RISQUE]",
+                                        "PORTÉE": "36\"",
+                                        "A": 6,
+                                        "CT": "4+",
+                                        "F": 8,
+                                        "PA": -2,
+                                        "D": 3
+                                    },
+                                    "Éclateur à fusion jumelé": {
+                                        "ARMES DE TIR": "Éclateur à fusion jumelé [FUSION 2, JUMELÉ]",
+                                        "PORTÉE": "12\"",
+                                        "A": 1,
+                                        "CT": "4+",
+                                        "F": 9,
+                                        "PA": -4,
+                                        "D": "D6"
+                                    }
+                                },
+                                "melee": {
+                                    "Poings de Ghostkeel": {
+                                        "ARMES DE MÊLÉE": "Poings de Ghostkeel",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 3,
+                                        "CC": "5+",
+                                        "F": 6,
+                                        "PA": 0,
+                                        "D": 2
+                                    }
+                                }
+                            },
+                            "wargear_abilities": {
+                                "Système d'appui d'exo-armure": "Le porteur est éligible pour tirer à un tour lors duquel il a Battu en Retraite."
+                            },
+                            "damaged": "Tant que cette figurine a 1-4 PV restants, à chaque attaque de cette figurine, soustrayez 1 au jet de Touche.",
+                            "abilities": {
+                                "BASE": "Déstruction Néfaste D3, Infiltrateurs, Agent Solitaire, Discrétion",
+                                "FACTION": "Pour le Bien Suprême"
+                            },
+                            "keywords": "VÉHICULE, MARCHEUR, VOL, EXO-ARMURE, GHOSTKEEL",
+                            "factions_keywords": "EMPIRE T'AU"
+                        }
+                    }
+                }
+            }
+        },
+        "Necrons": {
+            "img": "img/patrols/Necrons/Necrons_logo.png",
+            "factions_rules": {
+                "combat_patrol": {
+                    "patrol_units": {
+                        "TÉTRARQUE AMONHOTEKH": {
+                            "img": "img/patrols/Necrons/Tétrarque_Amonhotekh.png",
+                            "stats": {
+                                "move": "5\"",
+                                "toughness": 5,
+                                "save": "2+",
+                                "wounds": 6,
+                                "leadership": "4+",
+                                "objective_control": 1
+                            },
+                            "description": "Les Tétrarques dirigent les Dynasties Nécrons au combat. L'esprit androïde d'Amonhotekh est plus vif que la pensée, son corps est d'une résistance implacable et ses armes sont ésotériques, anciennes et fatales. Pourtant, c'est sa volonté indomptable qui constitue son atout majeur, car elle lui permet de contrôler des armées entières.",
+                            "weapons": {
+                                "ranged": {
+                                    "Arbalète à tachyons": {
+                                        "ARMES DE TIR": "Arbalète à tachyons [TIR UNIQUE]",
+                                        "PORTÉE": "72\"",
+                                        "A": 1,
+                                        "CT": "2+",
+                                        "F": 16,
+                                        "PA": -5,
+                                        "D": "D6+2"
+                                    }
+                                },
+                                "melee": {
+                                    "Lame de Tétrarque": {
+                                        "ARMES DE MÊLÉE": "Lame de Tétrarque [BLESSURES DÉVASTATRICES]",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 4,
+                                        "CC": "2+",
+                                        "F": 8,
+                                        "PA": -3,
+                                        "D": 2
+                                    }
+                                }
+                            },
+                            "leader" : "Cette figurine peut être attachée à l'unité suivante : Guerriers Nécrons",
+                            "abilities": {
+                                "BASE" : "Meneur",
+                                "FACTION": "Protocoles de Réanimation",
+                                "Résistance Inoxydable": "À chaque attaque qui cible cette figurine, soustrayez 1 à la caractéristique de Dégâts de cette attaque."
+                            },
+                            "keywords": "INFANTERIE, PERSONNAGE, NOBLE, TÉTRARQUE, AMONHOTEKH",
+                            "factions_keywords": "NÉCRONS"
+                        },
+                        "GUERRIERS NÉCRONS": {
+                            "img": "img/patrols/Necrons/Guerrier.png",
+                            "stats": {
+                                "move": "5\"",
+                                "toughness": 4,
+                                "save": "4+",
+                                "wounds": 1,
+                                "leadership": "7+",
+                                "objective_control": 2
+                            },
+                            "description": "Les Guerriers Nécrons avancent en rangs interminables et titubants. Guère plus que des automates, ils sont cependant implacables et redoutables une fois massés et encadrés. Les corps des Guerriers peuvent s'autoréparer, même en ayant subi les pires dégâts, tandis que leurs salves incessantes fauchent l'ennemi avec une efficacité mécanique.",
+                            "weapons": {
+                                "ranged": {
+                                    "Écorcheur Gauss": {
+                                        "ARMES DE TIR": "Écorcheur Gauss [TOUCHES FATALES, TIR RAPIDE 1]",
+                                        "PORTÉE": "24\"",
+                                        "A": 1,
+                                        "CT": "4+",
+                                        "F": 4,
+                                        "PA": 0,
+                                        "D": 1
+                                    },
+                                    "Faucheuse Gauss": {
+                                        "ARMES DE TIR": "Faucheuse Gauss [TOUCHES FATALES]",
+                                        "PORTÉE": "12\"",
+                                        "A": 2,
+                                        "CT": "4+",
+                                        "F": 5,
+                                        "PA": -1,
+                                        "D": 1
+                                    }
+                                },
+                                "melee": {
+                                    "Lame de Tétrarque": {
+                                        "ARMES DE MÊLÉE": "Arme de corps à corps",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 1,
+                                        "CC": "4+",
+                                        "F": 4,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                }
+                            },
+                            "abilities": {
+                                "FACTION": "Protocoles de Réanimation"
+                            },
+                            "keywords": "INFANTERIE, LIGNE, GUERRIERS NÉCRONS",
+                            "factions_keywords": "NÉCRONS"
+                        },
+                        "DESTROYERS SKORPEKHS": {
+                            "img": "img/patrols/Necrons/Destroyer_Skorpekhs.png",
+                            "stats": {
+                                "move": "7\"",
+                                "toughness": 6,
+                                "save": "3+",
+                                "wounds": 3,
+                                "leadership": "7+",
+                                "objective_control": 2
+                            },
+                            "description": "Les Destroyers Skorpekhs favorisent le corps à corps pour massacrer leurs victimes. Bien que disgracieux en dehors du champ de bataille, en combat, leurs trois jambes leur permettent de franchir les lignes ennemies en pirouettant tout en taillant à coups de lames d'hyperphase, dont les coups sont presque impossibles à parer ou à esquiver.",
+                            "weapons": {
+                                "melee": {
+                                    "Armes d'hyperphase skorpekhs": {
+                                        "ARMES DE MÊLÉE": "Armes d'hyperphase skorpekhs",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 4,
+                                        "CC": "3+",
+                                        "F": 7,
+                                        "PA": -2,
+                                        "D": 2
+                                    }
+                                }
+                            },
+                            "wargear_abilities" :{
+                                "Plasmacyte" : "Une fois par bataille pour chaque Plasmacyte que possède cette unité, quand cette unité est choisie pour combattre, vous pouvez utiliser cette aptitude. En ce cas, jusqu'à la fin de la phase, les armes de mêlée dont sont équipées les figurines de cette unité ont l'aptitude [BLESSURES DÉVASTATRICES].",
+                                "Note des Concepteurs" : "Placez le nombre adéquat de pions de Plasmacyte à côté de l'unité, et retirez-en 1 chaque fois que cette unité utilise cette aptitude."
+                            },
+                            "abilities": {
+                                "FACTION": "Protocoles de Réanimation"
+                            },
+                            "keywords": "INFANTERIE, DESTROYERS SKORPEKHS",
+                            "factions_keywords": "NÉCRONS"
+                        },
+                        "NUÉES DE SCARABÉES CANOPTEKS": {
+                            "img": "img/patrols/Necrons/Scarabées_Canopteks.png",
+                            "stats": {
+                                "move": "9\"",
+                                "toughness": 2,
+                                "save": "6+",
+                                "wounds": 4,
+                                "leadership": "8+",
+                                "objective_control": 0
+                            },
+                            "description": "Les Scarabées Canopteks attaquent sous forme de nuée volante. Ils s'abattent sur l'ennemi dans un bruit strident avant de débiter infanterie et blindés à l'aide de leurs mandibules, pour les convertir en énergie brute. Souvent en première vague d'un assaut nécron, ces insectes mécaniques sèment la peur et la destruction.",
+                            "weapons": {
+                                "melee": {
+                                    "Mandibules": {
+                                        "ARMES DE MÊLÉE": "Mandibules [TOUCHES FATALES]",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 6,
+                                        "CC": "5+",
+                                        "F": 2,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                }
+                            },
+                            "abilities": {
+                                "BASE" : "Destruction Néfaste 1",
+                                "FACTION": "Protocoles de Réanimation"
+                            },
+                            "keywords": "NUÉE, VOL, CANOPTEK, NUÉES DE SCARABÉES",
+                            "factions_keywords": "NÉCRONS"
+                        },
+                        "MARAUDEUR CANOPTEK": {
+                            "img": "img/patrols/Necrons/Maraudeur_Canoptek.png",
+                            "stats": {
+                                "move": "7\"",
+                                "toughness": 8,
+                                "save": "3+",
+                                "wounds": 12,
+                                "leadership": "8+",
+                                "objective_control": 4
+                            },
+                            "description": "Les Maraudeurs Canopteks se meuvent avec une grâce dérangeante. Qu'ils patrouillent dans les armureries de leurs maîtres telles des sentinelles infatigables ou fournissent un appui feu mobile aux légions de Nécrons, les Maraudeurs annihilent tout ce qui ose se dresser devant eux par de cuisantes décharges de leurs éclateurs du Jugement Dernier",
+                            "weapons": {
+                                "ranged": {
+                                    "Éclateur du Jugement Dernier": {
+                                        "ARMES DE TIR": "Éclateur du Jugement Dernier [DÉFLAGRATION, LOURD]",
+                                        "PORTÉE": "48\"",
+                                        "A": "D6+1",
+                                        "CT": "4+",
+                                        "F": 14,
+                                        "PA": -3,
+                                        "D": 3
+                                    },
+                                    "Écorcheur Gauss jumelé": {
+                                        "ARMES DE TIR": "Faucheuse Gauss [TOUCHES FATALES, TIR RAPIDE 1, JUMELÉ]",
+                                        "PORTÉE": "24\"",
+                                        "A": 1,
+                                        "CT": "4+",
+                                        "F": 4,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                },
+                                "melee": {
+                                    "Jambes de Maraudeur": {
+                                        "ARMES DE MÊLÉE": "Jambes de Maraudeur",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 3,
+                                        "CC": "4+",
+                                        "F": 6,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                }
+                            },
+                            "damaged" : "Tant que cette figurine a 1-4 PV restants, à chaque attaque de cette figurine, soustrayez 1 au jet de Touche.",
+                            "abilities": {
+                                "BASE" : "Destruction Néfaste D3",
+                                "FACTION": "Protocoles de Réanimation"
+                            },
+                            "keywords": "VÉHICULE, MARCHEUR, CANOPTEK, MARAUDEUR",
+                            "factions_keywords": "NÉCRONS"
+                        }
+                    }
+                }
+            }
+        },
+        "Space Marines": {
+            "img": "img/patrols/Space_Marines/Space_Marines_logo.png",
+            "factions_rules": {
+                "combat_patrol": {
+                    "patrol_units": {
+                        "CAPITAINE OCTAVIUS": {
+                            "img": "img/patrols/Space_Marines/Capitaine_Octavius.png",
+                            "stats": {
+                                "move": "5\"",
+                                "toughness": 5,
+                                "save": "2+",
+                                "wounds": 6,
+                                "leadership": "6+",
+                                "objective_control": 1
+                            },
+                            "description": "Les Capitaines space marines combattent en première ligne, et rares sont les armures leur permettant de le faire avec autant d'efficacité que le modèle Terminator. Le Capitaine Octavius se rend au combat revêtu d'une telle armure, qui le protège du pire que peut lui envoyer l'ennemi avant de tailler l'adversaire en pièces avec sa lame relique.",
+                            "weapons": {
+                                "ranged": {
+                                    "Bolter Storm": {
+                                        "ARMES DE TIR": "Bolter Storm [TIR RAPIDE 2]",
+                                        "PORTÉE": "24\"",
+                                        "A": 2,
+                                        "CT": "2+",
+                                        "F": 4,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                },
+                                "melee": {
+                                    "Arme relique": {
+                                        "ARMES DE MÊLÉE": "Arme relique",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 6,
+                                        "CC": "2+",
+                                        "F": 5,
+                                        "PA": -2,
+                                        "D": 2
+                                    }
+                                }
+                            },
+                            "leader": "Cette figurine peut être attachée à l'unité suivante : ESCOUADE TERMINATOR",
+                            "abilities": {
+                                "BASE": "Frappe en Profondeur, Meneur",
+                                "FACTION": "Serment de l'Instant",
+                                "Vertu Inexorable": "Vous pouvez relancer les jets de Charge pour l'unité de cette figurine."
+                            },
+                            "keywords": "INFANTERIE, PERSONNAGE, IMPERIUM, TERMINATOR, CAPITAINE, OCTAVIUS",
+                            "factions_keywords": "ADEPTUS ASTARTES"
+                        },
+                        "ARCHIVISTE TANTUS": {
+                            "img": "img/patrols/Space_Marines/Archiviste_Tantus.png",
+                            "stats": {
+                                "move": "5\"",
+                                "toughness": 5,
+                                "save": "2+",
+                                "wounds": 5,
+                                "leadership": "6+",
+                                "objective_control": 1
+                            },
+                            "description": "Les pouvoirs des Archivistes d'un Chapitre confèrent un atout psychique redoutable à ses fers de lance d'infanterie. Qu'il s'agisse d'abordages exténuants, de féroces combats urbains ou en première ligne contre des effectifs supérieurs, les Archivistes en armure Terminator consument l'ennemi à l'aide de leur redoutable énergie psychique.",
+                            "weapons": {
+                                "ranged": {
+                                    "Châtiment - feu sorcier": {
+                                        "ARMES DE TIR": "Châtiment - feu sorcier [PSYCHIQUE]",
+                                        "PORTÉE": "24\"",
+                                        "A": "D6",
+                                        "CT": "3+",
+                                        "F": 5,
+                                        "PA": -1,
+                                        "D": "D3"
+                                    },
+                                    "Châtiment - feu sorcier focalisé": {
+                                        "ARMES DE TIR": "Châtiment - feu sorcier focalisé [BLESSURES DÉVASTATRICES, À RISQUE, PSYCHIQUE]",
+                                        "PORTÉE": "24\"",
+                                        "A": "D6",
+                                        "CT": "3+",
+                                        "F": 6,
+                                        "PA": -2,
+                                        "D": "D3"
+                                    },
+                                    "Bolter Storm": {
+                                        "ARMES DE TIR": "Bolter Storm [TIR RAPIDE 2]",
+                                        "PORTÉE": "24\"",
+                                        "A": 2,
+                                        "CT": "3+",
+                                        "F": 4,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                },
+                                "melee": {
+                                    "Arme de force": {
+                                        "ARMES DE MÊLÉE": "Arme de force [PSYCHIQUE]",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 4,
+                                        "CC": "3+",
+                                        "F": 6,
+                                        "PA": -1,
+                                        "D": "D3"
+                                    }
+                                }
+                            },
+                            "leader": "Cette figurine peut être attachée à l'unité suivante : ESCOUADE TERMINATOR",
+                            "abilities": {
+                                "BASE": "Frappe en Profondeur, Meneur",
+                                "FACTION": "Serment de l'Instant",
+                                "Voile du Temps (Psychique)": "Tant que cette figurine mène une unité, les armes dont sont équipées les figurines de l'unité ont l'aptitude [TOUCHES SOUTENUES 1]."
+                            },
+                            "keywords": "INFANTERIE, PERSONNAGE, PSYKER, IMPERIUM, TERMINATOR, ARCHIVISTE, TANTUS",
+                            "factions_keywords": "ADEPTUS ASTARTES"
+                        },
+                        "ESCOUADE INFERNUS": {
+                            "img": "img/patrols/Space_Marines/Archiviste_Tantus.png",
+                            "stats": {
+                                "move": "6\"",
+                                "toughness": 4,
+                                "save": "3+",
+                                "wounds": 2,
+                                "leadership": "6+",
+                                "objective_control": 1
+                            },
+                            "description": "Les Escouades Infernus éliminent les rangs ennemis grâce aux déluges de feu déversés par leurs pyro-éclateurs. Ce sont des spécialistes des assauts rapprochés, qui projettent des gerbes de prométhium enflammé dans les tranchées, les bunkers, les ruines denses et la végétation occultante, afin que nul n'échappe à leur courroux.",
+                            "weapons": {
+                                "ranged": {
+                                    "Pistolet bolter": {
+                                        "ARMES DE TIR": "Pistolet bolter [PISTOLET]",
+                                        "PORTÉE": "12\"",
+                                        "A": 1,
+                                        "CT": "3+",
+                                        "F": 4,
+                                        "PA": 0,
+                                        "D": 1
+                                    },
+                                    "Pyro-éclateur": {
+                                        "ARMES DE TIR": "Pyro-éclateur [IGNORE LE COUVERT, TORRENT]",
+                                        "PORTÉE": "12\"",
+                                        "A": "D6",
+                                        "CT": "N/A",
+                                        "F": 5,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                },
+                                "melee": {
+                                    "Arme de corps à corps": {
+                                        "ARMES DE MÊLÉE": "Arme de corps à corps",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 3,
+                                        "CC": "3+",
+                                        "F": 4,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                }
+                            },
+                            "abilities": {
+                                "FACTION": "Serment de l'Instant"
+                            },
+                            "keywords": "INFANTERIE, IMPERIUM, TACTICUS, ESCOUADE INFERNUS",
+                            "factions_keywords": "ADEPTUS ASTARTES"
+                        },
+                        "ESCOUADE TERMINATOR": {
+                            "img": "img/patrols/Space_Marines/Escouade_Terminator.png",
+                            "stats": {
+                                "move": "5\"",
+                                "toughness": 5,
+                                "save": "2+",
+                                "wounds": 3,
+                                "leadership": "6+",
+                                "objective_control": 1
+                            },
+                            "description": "L'armure Terminator est une merveille de technologie qui permet à son porteur de survivre à tout, qu'il s'agisse des contraintes de la téléportation ou du pilonnage de l'artillerie. Ainsi équipées, les Escouades Terminator peuvent apparaître au milieu de l'ennemi ou avancer inexorablement sur le champ de bataille tout en tirant avec leurs armes.",
+                            "weapons": {
+                                "ranged": {
+                                    "Canon d'assaut": {
+                                        "ARMES DE TIR": "Canon d'assaut [BLESSURES DÉVASTATRICES]",
+                                        "PORTÉE": "24\"",
+                                        "A": 6,
+                                        "CT": "3+",
+                                        "F": 6,
+                                        "PA": 0,
+                                        "D": 1
+                                    },
+                                    "Bolter Storm": {
+                                        "ARMES DE TIR": "Bolter Storm [TIR RAPIDE 2]",
+                                        "PORTÉE": "24\"",
+                                        "A": 2,
+                                        "CT": "3+",
+                                        "F": 4,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                },
+                                "melee": {
+                                    "Arme de force": {
+                                        "ARMES DE MÊLÉE": "Gantelet énergétique",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 3,
+                                        "CC": "3+",
+                                        "F": 8,
+                                        "PA": -2,
+                                        "D": 2
+                                    }
+                                }
+                            },
+                            "abilities": {
+                                "BASE": "Frappe en Profondeur",
+                                "FACTION": "Serment de l'Instant",
+                                "Colère de l'Élite": "À chaque attaque d'une figurine de cette unité qui cible votre cible de Serment de l'Instant, ajoutez 1 au jet de Touche."
+                            },
+                            "keywords": "INFANTERIE, IMPERIUM, TERMINATOR, ESCOUADE TERMINATOR",
+                            "factions_keywords": "ADEPTUS ASTARTES"
+                        }
+                    }
+                }
+            }
+        },
+        "Thousand Sons": {
+            "img": "img/patrols/Thousands_Sons/Thousands_Sons_logo.png",
+            "factions_rules": {
+                "combat_patrol": {
+                    "patrol_units": {
+                        "AHRAK LE TISSEUR DE TEMPS": {
+                            "img": "img/patrols/Thousands_Sons/Ahrak.png",
+                            "stats": {
+                                "move": "6\"",
+                                "toughness": 4,
+                                "save": "3+",
+                                "wounds": 4,
+                                "leadership": "6+",
+                                "objective_control": 1
+                            },
+                            "description": "En tant que Maître Infernal, Ahrak a conclu des pactes avec des entités démoniaques que l'on appelle, par euphémisme, des tutélaires. Sur le champ de bataille, il peut déchaîner les pouvoirs de ces familiers maléfiques pour noyer ses ennemis sous des terreurs incarnées éphémères, écouter les murmures du futur ou contrôler les courants de l'empyrée.",
+                            "weapons": {
+                                "ranged": {
+                                    "Pistolet bolter Inferno": {
+                                        "ARMES DE TIR": "Pistolet bolter Inferno [PISTOLET]",
+                                        "PORTÉE": "12\"",
+                                        "A": 1,
+                                        "CT": "2+",
+                                        "F": 4,
+                                        "PA": -1,
+                                        "D": 1
+                                    },
+                                    "Invocation de Hurleurs - feu sorcier": {
+                                        "ARMES DE TIR": "Invocation de Hurleurs - feu sorcier [PSYCHIQUE, TORRENT]",
+                                        "PORTÉE": "18\"",
+                                        "A": "2D3",
+                                        "CT": "N/A",
+                                        "F": 6,
+                                        "PA": -2,
+                                        "D": 1
+                                    },
+                                    "Invocation de Hurleurs - feu sorcier focalisé": {
+                                        "ARMES DE TIR": "Invocation de Hurleurs - feu sorcier focalisé [À RISQUE, PSYCHIQUE, TORRENT]",
+                                        "PORTÉE": "18\"",
+                                        "A": "2D6",
+                                        "CT": "N/A",
+                                        "F": 6,
+                                        "PA": -2,
+                                        "D": 1
+                                    }
+                                },
+                                "melee": {
+                                    "Arme de force": {
+                                        "ARMES DE MÊLÉE": "Arme de force [PSYCHIQUE]",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 4,
+                                        "CC": "3+",
+                                        "F": 6,
+                                        "PA": -4,
+                                        "D": "D3"
+                                    }
+                                }
+                            },
+                            "abilities": {
+                                "FACTION": "Cabale de Sorciers 2",
+                                "Aperçu de l'Éternité (Psychique)": "Une fois par tour, vous pouvez changer le résultat de 1 jet de Touche, 1 jet de Blessure, 1 jet de Dégâts ou 1 jet de sauvegarde pour cette figurine par un 6 non modifié."
+                            },
+                            "keywords": "INFANTERIE, PERSONNAGE, PSYKER, CHAOS, TZEENTCH, MAÎTRE INFERNAL, AHRAK LE TISSEUR DE TEMPS",
+                            "factions_keywords": "Thousand Sons"
+                        },
+                        "TERMINATORS DU SCARABÉE OCCULTE": {
+                            "img": "img/patrols/Thousands_Sons/Terminator_scarabée.png",
+                            "stats": {
+                                "move": "5\"",
+                                "toughness": 5,
+                                "save": "2+",
+                                "wounds": 3,
+                                "leadership": "6+",
+                                "objective_control": 1
+                            },
+                            "description": "Les Terminators du Scarabée Occulte luttent avec le talent impitoyable qui était le leur lorsqu'ils servaient de gardes du corps de chair et de sang à Magnus, en frappant l'ennemi au cœur grâce à une sorcellerie de téléportation. Maniant d'anciens khopeshs prospériens, ils fauchent les victimes qui ont survécu à leurs salves implacables.",
+                            "weapons": {
+                                "ranged": {
+                                    "Lance-missiles Hellfyre": {
+                                        "ARMES DE TIR": "Lance-missiles Hellfyre",
+                                        "PORTÉE": "36\"",
+                                        "A": 2,
+                                        "CT": "3+",
+                                        "F": 10,
+                                        "PA": -2,
+                                        "D": 3
+                                    },
+                                    "Combi-bolter Inferno": {
+                                        "ARMES DE TIR": "Combi-bolter Inferno [TIR RAPIDE 2]",
+                                        "PORTÉE": "24\"",
+                                        "A": 2,
+                                        "CT": "3+",
+                                        "F": 4,
+                                        "PA": -1,
+                                        "D": 1
+                                    },
+                                    "Canon Soulreaper": {
+                                        "ARMES DE TIR": "Canon Soulreaper [BLESSURES DÉVASTATRICES]",
+                                        "PORTÉE": "24\"",
+                                        "A": 6,
+                                        "CT": "3+",
+                                        "F": 6,
+                                        "PA": -1,
+                                        "D": 1
+                                    },
+                                    "Châtiment du Warp": {
+                                        "ARMES DE TIR": "Châtiment du Warp [ANTI-INFANTERIE 4+, BLESSURES DÉVASTATRICES, PISTOLET, PSYCHIQUE]",
+                                        "PORTÉE": "18\"",
+                                        "A": 3,
+                                        "CT": "3+",
+                                        "F": 4,
+                                        "PA": -3,
+                                        "D": 1
+                                    }
+                                },
+                                "melee": {
+                                    "Arme de force": {
+                                        "ARMES DE MÊLÉE": "Arme de force [PSYCHIQUE]",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 4,
+                                        "CC": "3+",
+                                        "F": 6,
+                                        "PA": -1,
+                                        "D": "D3"
+                                    },
+                                    "Khopesh prospérien": {
+                                        "ARMES DE MÊLÉE": "Khopesh prospérien",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 3,
+                                        "CC": "3+",
+                                        "F": 5,
+                                        "PA": -2,
+                                        "D": 2
+                                    }
+                                }
+                            },
+                            "abilities": {
+                                "BASE": "Frappe en Profondeur",
+                                "FACTION": "Cabale de Sorciers 1* *Figurine Sorcier du Scarabée Occulte seulement",
+                                "Gardiens Implacables": "Tant que cette unité inclut une ou plusieurs figurines Psyker, à chaque attaque contre cette unité, si la caractéristique de Force de l'attaque est supérieure à la caractéristique d'Endurance de cette unité, soustrayez 1 au jet de Blessure."
+                            },
+                            "keywords": "INFANTERIE, TERMINATOR, CHAOS, TZEENTCH, TERMINATORS DU SCARABÉE OCCULTE | SORCIER DU SCARABÉE OCCULTE : PSYKER",
+                            "factions_keywords": "THOUSAND SONS"
+                        },
+                        "TZAANGORS": {
+                            "img": "img/patrols/Thousands_Sons/Tzaangor.png",
+                            "stats": {
+                                "move": "6\"",
+                                "toughness": 4,
+                                "save": "6+",
+                                "wounds": 1,
+                                "leadership": "7+",
+                                "objective_control": 2
+                            },
+                            "description": "Les sons de braillecorne et les cris aviaires augurent de l'arrivée des Tzaangors. Ces troupes de choc mutantes se ruent au combat en maniant des lames baroques ou des épées tronçonneuses rugissantes avec un talent cruel. Les tirs adverses sont déviés par une puissance occulte, car ces créatures appartiennent à Tzeentch corps et âme.",
+                            "weapons": {
+                                "ranged": {
+                                    "Pistolet-mitrailleur": {
+                                        "ARMES DE TIR": "Pistolet-mitrailleur [PISTOLET]",
+                                        "PORTÉE": "12\"",
+                                        "A": 1,
+                                        "CT": "4+",
+                                        "F": 3,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                },
+                                "melee": {
+                                    "Épée tronçonneuse ": {
+                                        "ARMES DE MÊLÉE": "Épée tronçonneuse ",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 3,
+                                        "CC": "4+",
+                                        "F": 4,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                }
+                            },
+                            "abilities": {
+                                "Chasseurs de Reliques": "À la fin de votre phase de Commandement, jetez 1 D6 pour chaque pion d'objectif que vous contrôlez et qui a une ou plusieurs unités de votre armée ayant cette aptitude à portée de lui : pour chaque 4+, vous gagnez 1 point de Cabale."
+                            },
+                            "keywords": "INFANTERIE, LIGNE, CHAOS, TZEENTCH, TZAANGORS",
+                            "factions_keywords": "THOUSAND SONS"
+                        }
+                    }
+                }
+            }
+        },
+        "Tyranides": {
+            "img": "img/patrols/Tyranides/Tyranides_logo.png",
+            "factions_rules": {
+                "combat_patrol": {
+                    "patrol_units": {
+                        "TERREUR DE VARDENGHAST": {
+                            "img": "img/patrols/Tyranides/Terreur_de_Vardenghast.png",
+                            "stats": {
+                                "move": "12\"",
+                                "toughness": 5,
+                                "save": "4+",
+                                "wounds": 6,
+                                "leadership": "7+",
+                                "objective_control": 1
+                            },
+                            "description": "En tant que Primat Tyranide, la Terreur de Vardenghast possède la force physique et synaptique d'une bête de guerre alpha, tout en bénéficiant d'une vitesse et d'une agilité accrue grâce à ses larges ailes de cuir. Fondant en plein cœur de l'ennemi, il lacère et pourfend jusqu'à ne laisser des corps mutilés et des proies en fuite.",
+                            "weapons": {
+                                "melee": {
+                                    "Griffes de Primat": {
+                                        "ARMES DE MÊLÉE": "Griffes de Primat",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 6,
+                                        "CC": "2+",
+                                        "F": 6,
+                                        "PA": -1,
+                                        "D": 2
+                                    }
+                                }
+                            },
+                            "abilities": {
+                                "BASE": "Frappe en Profondeur",
+                                "FACTION": "L'Ombre dans le Warp, Synapse",
+                                "Agonie Vengeresse": "Si cette figurine est détruite par une attaque de mêlée, si elle n'a pas combattu à cette phase, jetez 1 D6: sur 4+, ne la retirez pas du jeu. La figurine détruite peut combattre après que l'unité attaquante a résolu ses attaques, puis elle est retirée du jeu."
+                            },
+                            "keywords": "INFANTERIE, PERSONNAGE, VOL, GRAND DÉVOREUR, SYNAPSE, ENVAHISSEUR D'AVANT-GARDE, PRIMAT TYRANIDE AILÉ, TERREUR DE VARDENGHAST",
+                            "factions_keywords": "TYRANIDES"
+                        },
+                        "PSYCHOPHAGE": {
+                            "img": "img/patrols/Tyranides/Psychophage.png",
+                            "stats": {
+                                "move": "8\"",
+                                "toughness": 9,
+                                "save": "3+",
+                                "wounds": 10,
+                                "leadership": "8+",
+                                "objective_control": 3
+                            },
+                            "description": "Ces monstres se ruent au combat à une vitesse effrayante. Ils dévorent tous les organismes proies sur leur passage, mais ont une préférence pour ceux dotés de capacités psychiques. On ignore comment ils assimilent cette énergie ésotérique, mais cela leur permet de projeter des cendres psychocorrosives qui font détoner l'âme de leurs victimes.",
+                            "weapons": {
+                                "ranged": {
+                                    "Torrent psychoclaste": {
+                                        "ARMES DE TIR": "Torrent psychoclaste [IGNORE LE COUVERT, TORRENT]",
+                                        "PORTÉE": "12\"",
+                                        "A": "D6",
+                                        "CT": "N/A",
+                                        "F": 6,
+                                        "PA": -1,
+                                        "D": 1
+                                    }
+                                },
+                                "melee": {
+                                    "Griffes et gueule tentaculaire": {
+                                        "ARMES DE MÊLÉE": "Griffes et gueule tentaculaire [ANTI-PSYKER 4+, BLESSURES DÉVASTATRICES]",
+                                        "PORTÉE": "Mêlée",
+                                        "A": "D6+1",
+                                        "CC": "3+",
+                                        "F": 6,
+                                        "PA": -1,
+                                        "D": 2
+                                    }
+                                }
+                            },
+                            "abilities": {
+                                "BASE": "Destruction Néfaste 1, Insensible à la Douleur 5+",
+                                "FACTION": "Synapse",
+                                "Frénésie Nourricière": "À chaque attaque de mêlée de cette figurine qui cible une unité qui est en dessous de son Effectif Initial, ajoutez 1 au jet de Touche. Si cette cible est également En Dessous de son Demi-effectif, ajoutez 1 au jet de Blessure également."
+                            },
+                            "keywords": "MONSTRE, GRAND DÉVOREUR, RÉCOLTEUR, PSYCHOPHAGE",
+                            "factions_keywords": "TYRANIDES"
+                        },
+                        "TERMAGANTS": {
+                            "img": "img/patrols/Tyranides/Termagants.png",
+                            "stats": {
+                                "move": "6\"",
+                                "toughness": 3,
+                                "save": "5+",
+                                "wounds": 1,
+                                "leadership": "8+",
+                                "objective_control": 2
+                            },
+                            "description": "Prédateurs rampants attaquant en essaims immenses, les Termagants furent engendrés à l'origine pour patrouiller dans les étroites coursives des vaisseaux-ruches. Ils tiennent leur proie sous un feu nourri, cherchant à prendre l'ennemi de flanc et à l'entourer tandis qu'ils érodent ses effectifs.",
+                            "weapons": {
+                                "ranged": {
+                                    "Écorcheur": {
+                                        "ARMES DE TIR": "Écorcheur [ASSAUT]",
+                                        "PORTÉE": "18\"",
+                                        "A": 1,
+                                        "CT": "4+",
+                                        "F": 5,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                },
+                                "melee": {
+                                    "Griffes et dents chitineuses": {
+                                        "ARMES DE MÊLÉE": "Griffes et dents chitineuses",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 1,
+                                        "CC": "4+",
+                                        "F": 3,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                }
+                            },
+                            "patrolSquad" : "Au début de l'étape Déclarer les Formations de Bataille, avant de placer la moindre unité, cette unité peut être scindée en deux unités de dix figurines chacune.",
+                            "abilities": {
+                                "FACTION": "Synapse",
+                                "Horreurs Prédatrices": "Une fois par tour, quand une unité ennemie finit un mouvement Normal, d'Avance ou de Retraite à 9” de cette unité, si cette unité n'est à Portée d'Engagement d'aucune unité ennemie, elle peut faire un mouvement Normal de jusqu'à D6\"."
+                            },
+                            "keywords": "INFANTERIE, LIGNE, GRAND DÉVOREUR, MULTITUDE INFINIE, TERMAGANTS",
+                            "factions_keywords": "TYRANIDES"
+                        },
+                        "BARBGAUNTS": {
+                            "img": "img/patrols/Tyranides/Barbgaunts.png",
+                            "stats": {
+                                "move": "6\"",
+                                "toughness": 4,
+                                "save": "4+",
+                                "wounds": 2,
+                                "leadership": "8+",
+                                "objective_control": 1
+                            },
+                            "description": "Les Barbgaunts ne sont rien de plus que des armes vivantes, dont les corps et les lance-barbillons sont asservis à la volonté d'un ganglion parasite qui les aiguille au combat. Là, ils lâchent des salves de barbillons chitineux qui détonent dans la fureur de violents spasmes musculaires et pétrifient leurs victimes sous une pluie de projectiles.",
+                            "weapons": {
+                                "ranged": {
+                                    "Lance-barbillons": {
+                                        "ARMES DE TIR": "Lance-barbillons [DÉFLAGRATION, LOURD]",
+                                        "PORTÉE": "24\"",
+                                        "A": "D6",
+                                        "CT": "4+",
+                                        "F": 5,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                },
+                                "melee": {
+                                    "Griffes et dents chitineuses": {
+                                        "ARMES DE MÊLÉE": "Griffes et dents chitineuses",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 1,
+                                        "CC": "4+",
+                                        "F": 4,
+                                        "PA": 0,
+                                        "D": 1
+                                    }
+                                }
+                            },
+                            "abilities": {
+                                "FACTION": "Synapse",
+                                "Bombardement Perturbateur": "À votre phase de Tir, après que cette unité a tiré, choisissez 1 unité Infanterie ennemie touchée par une ou plusieurs de ces attaques. Jusqu'à la fin du prochain tour adverse, l'unité ennemie est désorganisée. Tant qu'une unité est désorganisée, soustrayez 2 à sa caractéristique de Mouvement et soustrayez 2 à ses jets d'Avance et de Charge."
+                            },
+                            "keywords": "INFANTERIE, GRAND DÉVOREUR, BARBGAUNTS",
+                            "factions_keywords": "TYRANIDES"
+                        },
+                        "BONDISSEURS DE VON RYAN": {
+                            "img": "img/patrols/Tyranides/Bondisseurs_de_Von_Ryan.png",
+                            "stats": {
+                                "move": "10\"",
+                                "toughness": 5,
+                                "save": "4+",
+                                "wounds": 3,
+                                "leadership": "8+",
+                                "objective_control": 1
+                            },
+                            "description": "Chasseurs furtifs et experts de l'embuscade, les Bondisseurs de Von Ryan sont vifs, agiles et particulièrement dangereux en terrain dense. Tels des mines vivantes, ils restent immobiles à l'endroit optimal pour causer autant de dégâts que possible. Quand ils sentent le moment idéal, ils massacrent tout dans une frénésie meurtrière.",
+                            "weapons": {
+                                "melee": {
+                                    "Serres de Bondisseur": {
+                                        "ARMES DE MÊLÉE": "Serres de Bondisseur",
+                                        "PORTÉE": "Mêlée",
+                                        "A": 6,
+                                        "CC": "3+",
+                                        "F": 5,
+                                        "PA": -1,
+                                        "D": 1
+                                    }
+                                }
+                            },
+                            "abilities": {
+                                "BASE": "Combat en Premier, Infiltrateurs, Discrétion",
+                                "FACTION": "Synapse",
+                                "Grand Bond": "Vous pouvez cibler cette unité avec le Stratagème Intervention Héroïque pour 0PC, et vous pouvez le faire même si vous avez déjà utilisé ce Stratagème sur une unité différente à cette phase."
+                            },
+                            "keywords": "INFANTERIE, GRAND DÉVOREUR, ENVAHISSEUR D'AVANT-GARDE, BONDISSEURS DE VON RYAN",
+                            "factions_keywords": "TYRANIDES"
                         }
                     }
                 }
