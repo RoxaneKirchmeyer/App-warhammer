@@ -21,16 +21,23 @@ $fontItalic: italic;
     width: 100%;
 }
 
-main {
-    h1 {
-        letter-spacing: 6px;
-        margin: 0;
-        padding: 0 10px 10px 20px;
-        margin-top: 20px;
-        font-weight: $fontBold;
-        font-family: $fontTitle;
-        color: $whiteTitle;
-        text-align: center;
-        width: 100%;
-    }
+
+h1,
+h2 {
+    letter-spacing: 6px;
+    margin: 0;
+    padding: 0 10px 10px 20px;
+    margin-top: 20px;
+    font-weight: $fontBold;
+    font-family: $fontTitle;
+    color: $whiteTitle;
+    text-align: center;
+    width: 100%;
+    text-shadow: 2px 2px 20px $blackBgr;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 5em;
+    margin: 1em 0;
 }

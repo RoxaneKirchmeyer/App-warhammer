@@ -11,7 +11,8 @@
   width: 100%;
 }
 
-main h1 {
+h1,
+h2 {
   letter-spacing: 6px;
   margin: 0;
   padding: 0 10px 10px 20px;
@@ -21,6 +22,13 @@ main h1 {
   color: #ffffff;
   text-align: center;
   width: 100%;
+  text-shadow: 2px 2px 20px #1d1a1b;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 5em;
+  margin: 1em 0;
 }
 
 body {
@@ -133,7 +141,7 @@ form button {
 form button {
   letter-spacing: 3px;
   width: 50%;
-  margin-top: 100px;
+  margin-top: 40px;
   cursor: pointer;
 }
 
@@ -315,7 +323,7 @@ footer img {
 .datasheet header .datasheet-description {
   width: 40%;
   position: relative;
-  top: -65px;
+  top: -57px;
   left: 450px;
 }
 .datasheet .datasheet-other-rules {

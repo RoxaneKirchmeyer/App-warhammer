@@ -68,10 +68,10 @@ function createDatasheet(factionName) {
     }
 
     let factionCombatPatrolUnits = factionData.factions_rules.combat_patrol.patrol_units;
+    createHtmlElement('h2', datasheetsFactionContainer, undefined, undefined, `${factionName}`.toUpperCase())
 
     Object.keys(factionCombatPatrolUnits).forEach(units => {
 
-        createHtmlElement('h2', datasheetsFactionContainer, undefined, undefined, `${factionName}`.toUpperCase())
         // Article
         const datasheetArticle = createHtmlElement('article', datasheetsFactionContainer, "datasheet");
         // Header
