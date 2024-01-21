@@ -1,5 +1,7 @@
 # Cahier des charges des fonctionnalités - Application d'aide au jeu Warhammer 40,000
 
+## Maquette avec prototypage : https://www.figma.com/file/k9HXplhNxaU5xU9K2G5z2j/Maquette-Warhammer-App?type=design&node-id=0-1&mode=design&t=m6tWRF1u2Za2Ixvg-0
+
 ## Objectifs
 
 L'objectif de cette application est de permettre aux utilisateurs de gérer efficacement leurs rounds de bataille, en recevant des annonces des évènements à résoudre en fonction de leurs liste d'armée et de leurs format de jeu. 
