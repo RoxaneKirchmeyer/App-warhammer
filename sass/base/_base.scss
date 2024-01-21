@@ -5,7 +5,7 @@ body {
 }
 
 main {
-    height: 100vh;
+    height: 87.1vh;
     background: rgb(169, 169, 169);
     background: linear-gradient(180deg, rgba(169, 169, 169, 1) 0%, rgba(233, 234, 236, 1) 100%);
 }
@@ -18,7 +18,8 @@ main {
     height: 30vh;
 }
 
-h2, h3,
+h2,
+h3,
 p {
     font-weight: $fontBold;
 }

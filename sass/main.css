@@ -21,7 +21,7 @@ h2 {
   font-family: "Oswald", sans-serif;
   color: #ffffff;
   text-align: center;
-  width: 100%;
+  width: auto;
   text-shadow: 2px 2px 20px #1d1a1b;
   font-size: 3rem;
 }
@@ -29,6 +29,7 @@ h2 {
 h2 {
   font-size: 5em;
   margin: 1em 0;
+  margin-top: 0;
 }
 
 body {
@@ -38,7 +39,7 @@ body {
 }
 
 main {
-  height: 100vh;
+  height: 87.1vh;
   background: rgb(169, 169, 169);
   background: linear-gradient(180deg, rgb(169, 169, 169) 0%, rgb(233, 234, 236) 100%);
 }
@@ -51,7 +52,8 @@ main {
   height: 30vh;
 }
 
-h2, h3,
+h2,
+h3,
 p {
   font-weight: bold;
 }
@@ -143,7 +145,6 @@ form {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  margin-top: 30px;
 }
 form select {
   width: 350px;
@@ -161,8 +162,8 @@ form button {
 }
 form button {
   letter-spacing: 3px;
-  width: 50%;
-  margin-top: 40px;
+  width: auto;
+  margin-top: 20px;
   cursor: pointer;
 }
 
@@ -173,10 +174,10 @@ footer {
 }
 
 main {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 main .logo-warhammer-40k {
   width: 1010px;
@@ -386,6 +387,8 @@ footer img {
   position: relative;
   margin: 0;
   margin-bottom: 100px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .datasheet footer .datasheet-keywords {
   width: 71%;
@@ -405,7 +408,7 @@ footer img {
 .datasheet footer .datasheet-keywords p {
   padding: 10px;
   padding-left: 40px;
-  margin: 0 0 0 25px;
+  margin: 0 25px;
   font-size: 1rem;
   font-family: "Heebo", sans-serif;
   font-weight: bold;
@@ -440,10 +443,42 @@ footer img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
+  margin: auto;
+  width: 80%;
+}
+.factions img {
+  margin: 25px 50px;
 }
 .factions h1 {
   width: 100%;
+}
+
+.deploiement a {
+  color: black;
+}
+.deploiement li {
+  list-style-type: none;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+}
+.deploiement p {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+.deploiement h3 {
+  font-family: "Barlow", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+.deploiement h4 {
+  font-family: "Barlow", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
 }
 
 .simulateur {
