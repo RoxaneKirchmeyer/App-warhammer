@@ -11,9 +11,10 @@
     },
     "factions": {
         "Adepta Sororitas": {
-            "img": "img/patrols/Adepta_Sororitas/Adepta_Sororitas_logo.png",
             "factions_rules": {
                 "combat_patrol": {
+                    "factionLogo": "img/patrols/Adepta_Sororitas/Adepta_Sororitas_Faction_Logo.png",
+                    "datasheetFooterLogo": "img/patrols/Adepta_Sororitas/Adepta_Sororitas_Datasheet_Footer_Logo.png",
                     "patrol_units": {
                         "CHANOINESSE ELLYRINE": {
                             "img": "img/patrols/Adepta_Sororitas/Chanoinesse_Ellyrine.png",
@@ -390,9 +391,10 @@
             }
         },
         "Empire T'au": {
-            "img": "img/patrols/Empire_T'au/Empire_T'au_logo.png",
             "factions_rules": {
                 "combat_patrol": {
+                    "factionLogo": "img/patrols/Empire_T'au/Empire_T'au_Faction_Logo.png",
+                    "datasheetFooterLogo": "img/patrols/Empire_T'au/Empire_T'au_Datasheet_Footer_Logo.png",
                     "patrol_units": {
                         "Aun'shar": {
                             "img": "img/patrols/Empire_T'au/Aun'Shar.png",
@@ -667,9 +669,10 @@
             }
         },
         "Necrons": {
-            "img": "img/patrols/Necrons/Necrons_logo.png",
             "factions_rules": {
                 "combat_patrol": {
+                    "factionLogo": "img/patrols/Necrons/Necrons_Faction_Logo.png",
+                    "datasheetFooterLogo": "img/patrols/Necrons/Necrons_Datasheet_Footer_Logo.png",
                     "patrol_units": {
                         "TÉTRARQUE AMONHOTEKH": {
                             "img": "img/patrols/Necrons/Tétrarque_Amonhotekh.png",
@@ -887,9 +890,10 @@
             }
         },
         "Space Marines": {
-            "img": "img/patrols/Space_Marines/Space_Marines_logo.png",
             "factions_rules": {
                 "combat_patrol": {
+                    "factionLogo": "img/patrols/Space_Marines/Space_Marines_Faction_Logo.png",
+                    "datasheetFooterLogo": "img/patrols/Space_Marines/Space_Marines_Datasheet_Footer_Logo.png",
                     "patrol_units": {
                         "CAPITAINE OCTAVIUS": {
                             "img": "img/patrols/Space_Marines/Capitaine_Octavius.png",
@@ -1104,12 +1108,13 @@
             }
         },
         "Thousand Sons": {
-            "img": "img/patrols/Thousands_Sons/Thousands_Sons_logo.png",
             "factions_rules": {
                 "combat_patrol": {
+                    "factionLogo": "img/patrols/Thousand_Sons/Thousand_Sons_Faction_Logo.png",
+                    "datasheetFooterLogo": "img/patrols/Thousand_Sons/Thousand_Sons_Datasheet_Footer_Logo.png",
                     "patrol_units": {
                         "AHRAK LE TISSEUR DE TEMPS": {
-                            "img": "img/patrols/Thousands_Sons/Ahrak.png",
+                            "img": "img/patrols/Thousand_Sons/Ahrak.png",
                             "stats": {
                                 "move": "6\"",
                                 "toughness": 4,
@@ -1169,7 +1174,7 @@
                             "factions_keywords": "Thousand Sons"
                         },
                         "TERMINATORS DU SCARABÉE OCCULTE": {
-                            "img": "img/patrols/Thousands_Sons/Terminator_scarabée.png",
+                            "img": "img/patrols/Thousand_Sons/Terminator_scarabée.png",
                             "stats": {
                                 "move": "5\"",
                                 "toughness": 5,
@@ -1248,7 +1253,7 @@
                             "factions_keywords": "THOUSAND SONS"
                         },
                         "TZAANGORS": {
-                            "img": "img/patrols/Thousands_Sons/Tzaangor.png",
+                            "img": "img/patrols/Thousand_Sons/Tzaangor.png",
                             "stats": {
                                 "move": "6\"",
                                 "toughness": 4,
@@ -1293,12 +1298,13 @@
             }
         },
         "Tyranides": {
-            "img": "img/patrols/Tyranides/Tyranides_logo.png",
             "factions_rules": {
                 "combat_patrol": {
+                    "factionLogo": "img/patrols/Tyranids/Tyranids_Faction_Logo.png",
+                    "datasheetFooterLogo": "img/patrols/Tyranids/Tyranids_Datasheet_Footer_Logo.png",
                     "patrol_units": {
                         "TERREUR DE VARDENGHAST": {
-                            "img": "img/patrols/Tyranides/Terreur_de_Vardenghast.png",
+                            "img": "img/patrols/Tyranids/Terreur_de_Vardenghast.png",
                             "stats": {
                                 "move": "12\"",
                                 "toughness": 5,
@@ -1373,7 +1379,7 @@
                             "factions_keywords": "TYRANIDES"
                         },
                         "TERMAGANTS": {
-                            "img": "img/patrols/Tyranides/Termagants.png",
+                            "img": "img/patrols/Tyranids/Termagants.png",
                             "stats": {
                                 "move": "6\"",
                                 "toughness": 3,
@@ -1416,7 +1422,7 @@
                             "factions_keywords": "TYRANIDES"
                         },
                         "BARBGAUNTS": {
-                            "img": "img/patrols/Tyranides/Barbgaunts.png",
+                            "img": "img/patrols/Tyranids/Barbgaunts.png",
                             "stats": {
                                 "move": "6\"",
                                 "toughness": 4,
@@ -1458,7 +1464,7 @@
                             "factions_keywords": "TYRANIDES"
                         },
                         "BONDISSEURS DE VON RYAN": {
-                            "img": "img/patrols/Tyranides/Bondisseurs_de_Von_Ryan.png",
+                            "img": "img/patrols/Tyranids/Bondisseurs_de_Von_Ryan.png",
                             "stats": {
                                 "move": "10\"",
                                 "toughness": 5,

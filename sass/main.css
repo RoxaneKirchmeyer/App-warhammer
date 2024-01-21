@@ -33,6 +33,7 @@ h2 {
 
 body {
   margin: 0;
+  padding: 0;
   background-color: #c0c2c0;
 }
 
@@ -111,10 +112,30 @@ span {
   border-bottom: 2px dotted black;
 }
 
-header {
-  height: 150px;
-  background-color: black;
-  margin-bottom: 200px;
+.header {
+  margin: 0;
+  padding: 0;
+  background-color: #1d1a1b;
+}
+.header ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header ul li {
+  list-style-type: none;
+  padding: 20px;
+}
+.header ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  font-size: 2rem;
+}
+.header ul li a:hover {
+  color: rgb(24, 96, 113);
 }
 
 form {
@@ -413,6 +434,16 @@ footer img {
   font-family: "Heebo", sans-serif;
   font-weight: bold;
   color: #ffffff;
+}
+
+.factions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.factions h1 {
+  width: 100%;
 }
 
 .simulateur {
