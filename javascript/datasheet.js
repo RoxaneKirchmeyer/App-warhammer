@@ -3,7 +3,7 @@ let armySelector = document.querySelector("#armySelector");
 let datasheetsFactionContainer;
 
 // Charger le fichier JSON et appeler la fonction avec les données
-fetch('json/rules.json')
+fetch('../json/rules.json')
     .then(response => response.json())
     .then(data => {
         jsonData = data;

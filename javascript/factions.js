@@ -2,7 +2,7 @@ let jsonData;
 
 const factionArticle = document.querySelector("#factions");
 
-fetch('/json/rules.json')
+fetch('../json/rules.json')
     .then(response => response.json())
     .then(data => {
         jsonData = data;
