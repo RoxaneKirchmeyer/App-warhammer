@@ -240,25 +240,29 @@ function createDatasheet(factionName) {
 
 }
 
+// Fonction de création du selecteur d'armée
 function createArmySelector(jsonData) {
+    // Création de la balise form
     let armySelectorForm = createHtmlElement('form', armySelector, "army-selector-form");
+    // Création de la balise select
     let armySelectorFormSelect = createHtmlElement('select', armySelectorForm);
+    // Création d'une balise option par défaut
     createHtmlElement('option', armySelectorFormSelect, undefined, undefined, 'Sélectionnez votre faction', '');
 
-    // Ajouter une option par faction du JSON
+    // Création d'une balise par faction
     Object.keys(jsonData.factions).forEach(factionName => {
         createHtmlElement('option', armySelectorFormSelect, undefined, undefined, factionName, factionName);
     });
 
-    // Ajouter un écouteur d'événement au bouton
+    // Création d'un button submit
     createHtmlElement('button', armySelectorForm, undefined, undefined, 'Valider', 'submit', function (event) {
         // Empêcher le comportement par défaut du formulaire
         event.preventDefault();
         // Récupérer la valeur de l'option sélectionnée
         let selectedFaction = armySelectorFormSelect.value;
-        // Appeler la fonction avec la faction sélectionnée
+        // Appeler la fonction pour créer les datasheets
         createDatasheet(selectedFaction);
-
+        // Faire un scroll pour arriver sur la première datasheet
         datasheetsFactionContainer.scrollIntoView({ behavior: 'smooth' });
     });
 }
